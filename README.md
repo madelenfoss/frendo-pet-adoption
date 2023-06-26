@@ -28,3 +28,20 @@ spring/summer 23.
 Mobile and desktop version.
 Adoption pages for dogs, cats, birds and bunnies with data fetched from Sanity, with the possibility to click on each animal to open a new page with more information about the pet.
 Main page slideshow displaying images of the animals and the surrounding environment.
+
+## Important links:
+
+**Github repository:**
+
+**Github project:**
+
+**Sanity studio deploy:**
+
+**Netlify:**
+
+## Technologies used:
+- HTML
+- CSS
+- Javascript
+- Sanity.io
+- Netlify
