@@ -22,3 +22,9 @@ spring/summer 23.
 	- Pet age converter
 	- Memory game
 - Contact page with contact info
+
+## MVP - Minimum Viable Product:
+
+Mobile and desktop version.
+Adoption pages for dogs, cats, birds and bunnies with data fetched from Sanity, with the possibility to click on each animal to open a new page with more information about the pet.
+
