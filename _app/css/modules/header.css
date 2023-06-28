@@ -2,16 +2,21 @@
 	display: flex;
 	background: var(--primary);
 	align-items: center;
-	justify-content: space-evenly;
 	width: 100%;
 }
 
 .navbar__logo {
-	padding: 3rem;
+	margin: 1rem auto;
+	cursor: pointer;
 }
 
 .navbar__logo a {
+	width: 5rem;
+	height: 5rem;
+	padding: 1.6rem 0.2rem;
 	text-decoration: none;
+	border: 0.2rem solid var(--tertiary);
+	border-radius: 10rem;
 }
 
 .navbar__mobile-icons {
