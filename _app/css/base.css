@@ -1,0 +1,27 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+	background-color: var(--secondary);
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	margin: 3rem auto;
+	padding: 0 1rem;
+	width: 100%;
+	font-size: 3.1rem;
+	font-weight: bold;
+	width: 100vw;
+	color: var(--tertiary);
+	text-shadow: 0 4px 4px var(--primary);
+	text-align: center;
+}
+
+button {
+	cursor: pointer;
+}
