@@ -7,3 +7,18 @@
 .navbar__mobile-icons {
 	display: none;
 }
+
+.navbar__menu {
+	display: flex;
+	list-style: none;
+}
+
+.navbar__menu-link a {
+	text-decoration: none;
+}
+
+.navbar__submenu {
+	list-style: none;
+}
+
+
