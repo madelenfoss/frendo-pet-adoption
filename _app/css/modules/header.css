@@ -15,6 +15,7 @@
 	height: 5rem;
 	padding: 1.6rem 0.2rem;
 	text-decoration: none;
+	color: var(--tertiary);
 	border: 0.2rem solid var(--tertiary);
 	border-radius: 10rem;
 }
@@ -36,6 +37,7 @@
 
 .navbar__menu-link a {
 	text-decoration: none;
+	color: var(--tertiary);
 }
 
 .navbar__menu-link:hover .navbar__submenu {
