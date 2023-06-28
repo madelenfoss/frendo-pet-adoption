@@ -2,6 +2,12 @@
 	display: flex;
 	background: var(--primary);
 	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.navbar__logo {
+	padding: 3rem;
 }
 
 .navbar__logo a {
@@ -15,6 +21,12 @@
 .navbar__menu {
 	display: flex;
 	list-style: none;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.navbar__menu-link {
+	margin: 2rem;
 }
 
 .navbar__menu-link a {
