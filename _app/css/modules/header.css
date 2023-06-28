@@ -4,6 +4,10 @@
 	align-items: center;
 }
 
+.navbar__logo a {
+	text-decoration: none;
+}
+
 .navbar__mobile-icons {
 	display: none;
 }
