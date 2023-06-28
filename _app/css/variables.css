@@ -1,0 +1,12 @@
+:root {
+	--font-h1:'Signika'; 
+	--font-h3:'Signika';
+	
+	--primary: #61bdff;
+	--secondary: #D3EFFF;
+	--tertiary: #004a90;
+	--quaternary: #FF6B00;
+	--quinary: #FFFFFF;
+	--senary: black;
+	--septenary: #ff9900;
+}
