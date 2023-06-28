@@ -3,3 +3,7 @@
 	background: var(--primary);
 	align-items: center;
 }
+
+.navbar__mobile-icons {
+	display: none;
+}
