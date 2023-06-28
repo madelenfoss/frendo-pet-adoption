@@ -1,0 +1,5 @@
+.navbar {
+	display: flex;
+	background: var(--primary);
+	align-items: center;
+}
