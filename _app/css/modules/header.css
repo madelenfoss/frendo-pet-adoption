@@ -39,6 +39,9 @@
 
 .navbar__menu-link {
 	margin: 2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+
 }
 
 .navbar__menu-link a {
@@ -54,6 +57,16 @@
 	display: none;
 	position: absolute;
 	list-style: none;
+	background: var(--primary);
+	width: 12.8rem;
+	border-radius: 0.5rem;
+	z-index: 30;
+}
+
+.navbar__submenu-link {
+	padding: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 
