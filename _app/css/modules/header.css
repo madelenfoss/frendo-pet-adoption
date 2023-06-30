@@ -17,12 +17,13 @@
 }
 
 .navbar__logo a {
-	padding: 2.1rem 0.2rem;
+	padding: 2.9rem 0.6rem;
 	text-decoration: none;
 	color: var(--tertiary);
 	border: 0.2rem solid var(--tertiary);
 	border-radius: 10rem;
 	font-weight: bold;
+	font-size: 1.5rem;
 }
 
 .navbar__logo a:hover {
