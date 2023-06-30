@@ -57,6 +57,11 @@
 	color: var(--tertiary);
 }
 
+.navbar__menu-link a:hover {
+	color: var(--quinary);
+	transition: ease-in-out 0.3s;
+}
+
 .navbar__menu-link:hover .navbar__submenu {
 	display: block;
 }
