@@ -23,11 +23,24 @@
 	font-size: 1.2rem;
 }
 
-.footer__some-items {
+.footer__items-some-links {
 	display: flex;
 	list-style: none;
+	margin-top: 3rem;
 }
 
-.footer__some-items-link {
+.footer__items-some-link {
 	padding: 2rem;
+}
+
+.footer__copyright {
+	display: block;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+	margin: 3rem auto;
+	padding-top: 1rem;
+	font-size: 18px;
+	color: var(--tertiary);
+	border-top: 1px solid var(--tertiary);
 }
