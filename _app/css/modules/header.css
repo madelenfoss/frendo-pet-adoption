@@ -4,7 +4,7 @@
 	top: 0;
 	background: var(--primary);
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	width: 100%;
 	box-shadow: 0 1px 6px var(--tertiary);
 	z-index: 20;
@@ -12,14 +12,12 @@
 }
 
 .navbar__logo {
-	margin: 3rem;
+	margin: 4rem auto;
 	cursor: pointer;
 }
 
 .navbar__logo a {
-	width: 5rem;
-	height: 5rem;
-	padding: 1.7rem 0.2rem;
+	padding: 2.1rem 0.2rem;
 	text-decoration: none;
 	color: var(--tertiary);
 	border: 0.2rem solid var(--tertiary);
@@ -39,17 +37,17 @@
 
 .navbar__menu {
 	display: flex;
-	list-style: none;
+	margin: 0 auto;
 	width: 100%;
-	justify-content: space-between;
+	list-style: none;
 	align-items: center;
+	justify-content: space-evenly;
 }
 
 .navbar__menu-link {
-	margin: 2rem;
+	margin: 1rem;
 	text-transform: uppercase;
 	font-weight: bold;
-
 }
 
 .navbar__menu-link a {
@@ -90,9 +88,4 @@
 	cursor: pointer;
 	transition: ease-in-out 0.2s;
 }
-
-.navbar__menu-donate a {
-	color: var(--quinary);
-}
-
 
