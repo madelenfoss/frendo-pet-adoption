@@ -1,0 +1,23 @@
+.footer {
+	display: flex;
+	width: 100%;
+	background: var(--primary);
+	margin-top: auto;
+}
+
+
+
+.footer__logo {
+	margin: 4rem auto;
+	cursor: pointer;
+}
+
+.footer__logo a {
+	padding: 2.2rem 0.4rem;
+	text-decoration: none;
+	color: var(--tertiary);
+	border: 0.2rem solid var(--tertiary);
+	border-radius: 10rem;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
