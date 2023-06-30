@@ -60,6 +60,7 @@
 .navbar__menu-link a:hover {
 	color: var(--quinary);
 	transition: ease-in-out 0.3s;
+	text-shadow: 0 1px 2px var(--tertiary);
 }
 
 .navbar__menu-link:hover .navbar__submenu {
@@ -81,7 +82,22 @@
 	padding: 1rem;
 	text-transform: uppercase;
 	font-weight: bold;
+	width: 20rem;
+	cursor: pointer;
 }
+
+/* Fix so that link is changing color when hovering */
+.navbar__submenu-link a {
+	width: 100%;
+}
+
+.navbar__submenu-link:hover,
+.navbar__submenu-link a:hover {
+	background: var(--tertiary);
+	color: var(--quinary);
+	border-radius: 0.5rem;
+}
+
 
 .navbar__menu-donate {
 	margin: 2rem auto;
