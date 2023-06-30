@@ -78,8 +78,12 @@
 }
 
 .navbar__menu-donate {
+	margin: 2rem auto;
 	padding: 1rem 1.5rem;
 	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--quinary);
 	background: var(--quaternary);
 	border-radius: 3rem;
 	box-shadow: 0 3px 7px var(--tertiary);
