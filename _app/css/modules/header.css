@@ -69,4 +69,17 @@
 	font-weight: bold;
 }
 
+.navbar__menu-donate {
+	padding: 1rem 1.5rem;
+	font-weight: 400;
+	background: var(--quaternary);
+	border-radius: 3rem;
+	box-shadow: 0 3px 7px var(--tertiary);
+	cursor: pointer;
+	transition: ease-in-out 0.2s;
+}
+
+.navbar__menu-donate a {
+	color: var(--quinary);
+}
 
