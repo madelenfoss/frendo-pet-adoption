@@ -2,9 +2,10 @@
 	display: flex;
 	position: sticky;
 	top: 0;
+	margin: 0 auto;
 	background: var(--primary);
 	align-items: center;
-	justify-content: space-between;
+	justify-content:flex-start;
 	width: 100%;
 	box-shadow: 0 1px 6px var(--tertiary);
 	z-index: 20;
@@ -46,7 +47,7 @@
 }
 
 .navbar__menu-link {
-	margin: 1rem;
+	margin: 2vw;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -64,8 +65,9 @@
 	display: none;
 	position: absolute;
 	list-style: none;
+	padding: 0.5rem 0;
 	background: var(--primary);
-	width: 12.8rem;
+	width: 20rem;
 	border-radius: 0.5rem;
 	z-index: 30;
 }
