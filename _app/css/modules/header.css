@@ -1,8 +1,14 @@
 .navbar {
 	display: flex;
+	position: sticky;
+	top: 0;
 	background: var(--primary);
 	align-items: center;
+	justify-content: space-evenly;
 	width: 100%;
+	box-shadow: 0 1px 6px var(--tertiary);
+	z-index: 20;
+	font-size: 20px;
 }
 
 .navbar__logo {
@@ -35,7 +41,7 @@
 	display: flex;
 	list-style: none;
 	width: 100%;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -84,4 +90,5 @@
 .navbar__menu-donate a {
 	color: var(--quinary);
 }
+
 
