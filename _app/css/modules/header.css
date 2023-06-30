@@ -1,23 +1,30 @@
 .navbar {
 	display: flex;
+	position: sticky;
+	top: 0;
+	margin: 0 auto;
 	background: var(--primary);
 	align-items: center;
+	justify-content:flex-start;
 	width: 100%;
+	box-shadow: 0 1px 6px var(--tertiary);
+	z-index: 20;
+	font-size: 20px;
 }
 
 .navbar__logo {
-	margin: 3rem;
+	margin: 4rem auto;
 	cursor: pointer;
 }
 
 .navbar__logo a {
-	width: 5rem;
-	height: 5rem;
-	padding: 1.6rem 0.2rem;
+	padding: 2.9rem 0.6rem;
 	text-decoration: none;
 	color: var(--tertiary);
 	border: 0.2rem solid var(--tertiary);
 	border-radius: 10rem;
+	font-weight: bold;
+	font-size: 1.5rem;
 }
 
 .navbar__logo a:hover {
@@ -32,18 +39,28 @@
 
 .navbar__menu {
 	display: flex;
-	list-style: none;
+	margin: 0 auto;
 	width: 100%;
+	list-style: none;
+	align-items: center;
 	justify-content: space-evenly;
 }
 
 .navbar__menu-link {
-	margin: 2rem;
+	margin: 2vw;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .navbar__menu-link a {
 	text-decoration: none;
 	color: var(--tertiary);
+}
+
+.navbar__menu-link a:hover {
+	color: var(--quinary);
+	transition: ease-in-out 0.3s;
+	text-shadow: 0 1px 2px var(--tertiary);
 }
 
 .navbar__menu-link:hover .navbar__submenu {
@@ -54,6 +71,45 @@
 	display: none;
 	position: absolute;
 	list-style: none;
+	padding: 0.5rem 0;
+	background: var(--primary);
+	width: 20rem;
+	border-radius: 0.5rem;
+	z-index: 30;
 }
 
+.navbar__submenu-link {
+	padding: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 20rem;
+	cursor: pointer;
+}
+
+/* Fix so that link is changing color when hovering */
+.navbar__submenu-link a {
+	width: 100%;
+}
+
+.navbar__submenu-link:hover,
+.navbar__submenu-link a:hover {
+	background: var(--tertiary);
+	color: var(--quinary);
+	border-radius: 0.5rem;
+}
+
+
+.navbar__menu-donate {
+	margin: 2rem auto;
+	padding: 1rem 1.5rem;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--quinary);
+	background: var(--quaternary);
+	border-radius: 3rem;
+	box-shadow: 0 3px 7px var(--tertiary);
+	cursor: pointer;
+	transition: ease-in-out 0.2s;
+}
 
