@@ -13,11 +13,12 @@
 .navbar__logo a {
 	width: 5rem;
 	height: 5rem;
-	padding: 1.6rem 0.2rem;
+	padding: 1.7rem 0.2rem;
 	text-decoration: none;
 	color: var(--tertiary);
 	border: 0.2rem solid var(--tertiary);
 	border-radius: 10rem;
+	font-weight: bold;
 }
 
 .navbar__logo a:hover {
