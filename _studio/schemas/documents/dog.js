@@ -5,7 +5,8 @@ export default {
 	fields: [
 		{
 			title: 'Dog name',
-			name:	''
+			name:	'dogName',
+			type: 'string',
 		}
 	]
 }
