@@ -18,13 +18,13 @@
 }
 
 .navbar__logo a {
-	padding: 2.9rem 0.6rem;
+	padding: 2.3rem 0.3rem;
 	text-decoration: none;
 	color: var(--tertiary);
 	border: 0.2rem solid var(--tertiary);
 	border-radius: 10rem;
 	font-weight: bold;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 }
 
 .navbar__logo a:hover {
@@ -138,12 +138,28 @@
 		display: none;
 	}
 
-	.navbar__mobile-icons {
+	.navbar__mobile-menu-icon {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		margin: 0 auto;
-		justify-content: space-between;
-		padding: 0 1.5rem 1rem 1.5rem;
+		background: none;
+		border: none;
+	}
+
+	.navbar__mobile-menu-icon-top,
+	.navbar__mobile-menu-icon-middle,
+	.navbar__mobile-menu-icon-bottom {
+		width: 5rem;
+		height: 0.4rem;
+		margin: 0.4rem 0;
+		background: var(--tertiary);
+		border-radius: 1rem;
+	}
+
+	.navbar__menu-donate {
+		width: 30vw;
+		text-align: center;
 	}
 }
 
