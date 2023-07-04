@@ -66,6 +66,36 @@ export default {
 			}
 		},
 		{
+			title: 'Living with children',
+			name: 'liveWithChildren',
+			type: 'string',
+			options: {
+				list: [
+					"I can live with teenagers",
+					"I can live with older children and teenagers",
+					"I prefer to live with adults only"
+				]
+			}
+		},
+		{
+			title: 'Ideal home location',
+			name: 'idealHome',
+			type: 'string',
+			options: {
+				list: [
+					"I prefer to live away from the inner city",
+					"I can live in just about any location",
+					"I prefer to live in the countryside"
+				]
+			}
+		},
+		{
+			title: 'Hear me woof',
+			name: 'woof',
+			type: 'file',
+			description: 'MP3 or MP4'
+		},
+		{
 			title: 'Description',
 			name: 'description',
 			type: 'text'
