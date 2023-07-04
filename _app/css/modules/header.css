@@ -140,6 +140,10 @@
 
 	.navbar__mobile-icons {
 		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		justify-content: space-between;
+		padding: 0 1.5rem 1rem 1.5rem;
 	}
 }
 
