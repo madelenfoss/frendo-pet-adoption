@@ -102,6 +102,24 @@ export default {
 			title: 'Description',
 			name: 'description',
 			type: 'text'
-		}
+		},
+		{
+			title: 'Portrait',
+			name: 'portrait',
+			type: 'image',
+			fields: [
+				{
+					title: 'Alternative text',
+					name: 'alternative',
+					description: 'Important! For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
+					type: 'string',
+				},
+				{
+					type: 'string',
+					name: 'credits',
+					title: 'Credits'
+				},
+			],
+		},
 	]
 }
