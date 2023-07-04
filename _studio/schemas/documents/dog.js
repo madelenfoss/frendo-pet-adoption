@@ -6,11 +6,12 @@ export default {
 		{
 			title: 'Dog name',
 			name:	'dogName',
-			type: 'string',
+			type: 'string'
 		},
 		{
 			title: 'slug',
 			name: 'slug',
+			type: 'slug',
 			options: {
 				source: 'dogName'
 			}
@@ -18,7 +19,22 @@ export default {
 		{
 			title: 'Breed',
 			name: 'breed',
-			type: 'string',
+			type: 'string'
+		},
+		{
+			title: 'Sex',
+			name: 'sex',
+			type: 'string'
+		},
+		{
+			title: 'Date of arrival',
+			name: 'date',
+			type: 'date'
+		},
+		{
+			title: 'Description',
+			name: 'description',
+			type: 'text'
 		}
 	]
 }
