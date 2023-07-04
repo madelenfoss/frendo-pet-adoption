@@ -4,8 +4,8 @@ export default {
 	type: 'document',
 	fields: [
 		{
-			title: 'Cat name',
-			name:	'catName',
+			title: 'Name',
+			name:	'name',
 			type: 'string'
 		},
 		{
@@ -13,7 +13,7 @@ export default {
 			name: 'slug',
 			type: 'slug',
 			options: {
-				source: 'catName'
+				source: 'name'
 			}
 		},
 		{
