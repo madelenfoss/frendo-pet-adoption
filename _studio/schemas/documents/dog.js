@@ -27,8 +27,8 @@ export default {
 			type: 'string',
 			options: {
 				list: [
-					'male',
-					'female'
+					'Male',
+					'Female'
 				]
 			}
 		},
@@ -36,6 +36,18 @@ export default {
 			title: 'Age',
 			name: 'age',
 			type: 'number'
+		},
+		{
+			title: 'Size',
+			name: 'size',
+			type: 'string',
+			options: {
+				list: [
+					'Small',
+					'Medium',
+					'Large'
+				]
+			}
 		},
 		{
 			title: 'Date of arrival',
@@ -50,6 +62,7 @@ export default {
 				list: [
 					"I prefer to live with other dogs",
 					"I can live with other dogs",
+					"I may be able to live with other dogs",
 					"I prefer to live alone"
 				]
 			}
@@ -73,7 +86,8 @@ export default {
 				list: [
 					"I can live with teenagers",
 					"I can live with older children and teenagers",
-					"I prefer to live with adults only"
+					"I prefer to live with adults only",
+					"I can live with any aged child"
 				]
 			}
 		},
