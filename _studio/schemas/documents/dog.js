@@ -6,7 +6,8 @@ export default {
 		{
 			title: 'Name',
 			name:	'name',
-			type: 'string'
+			type: 'string',
+			validation: rule => rule.required()
 		},
 		{
 			title: 'slug',
@@ -14,12 +15,14 @@ export default {
 			type: 'slug',
 			options: {
 				source: 'name'
-			}
+			},
+			validation: rule => rule.required()
 		},
 		{
 			title: 'Breed',
 			name: 'breed',
-			type: 'string'
+			type: 'string',
+			validation: rule => rule.required()
 		},
 		{
 			title: 'Sex',
@@ -30,12 +33,14 @@ export default {
 					'Male',
 					'Female'
 				]
-			}
+			},
+			validation: rule => rule.required()
 		},
 		{
 			title: 'Age',
 			name: 'age',
-			type: 'number'
+			type: 'number',
+			validation: rule => rule.required()
 		},
 		{
 			title: 'Size',
@@ -47,12 +52,14 @@ export default {
 					'Medium',
 					'Large'
 				]
-			}
+			},
+			validation: rule => rule.required()
 		},
 		{
 			title: 'Date of arrival',
 			name: 'date',
-			type: 'date'
+			type: 'date',
+			validation: rule => rule.required()
 		},
 		{
 			title: 'Living with dogs',
@@ -65,7 +72,8 @@ export default {
 					"I may be able to live with other dogs",
 					"I prefer to live alone"
 				]
-			}
+			},
+			validation: rule => rule.required()
 		},
 		{
 			title: 'Living with cats',
@@ -76,7 +84,8 @@ export default {
 					"I may be able to live with cats",
 					"I can't live with cats"
 				]
-			}
+			},
+			validation: rule => rule.required()
 		},
 		{
 			title: 'Living with children',
@@ -89,7 +98,8 @@ export default {
 					"I prefer to live with adults only",
 					"I can live with any aged child"
 				]
-			}
+			},
+			validation: rule => rule.required()
 		},
 		{
 			title: 'Ideal home location',
@@ -101,7 +111,8 @@ export default {
 					"I can live in just about any location",
 					"I prefer to live in the countryside"
 				]
-			}
+			},
+			validation: rule => rule.required()
 		},
 		{
 			title: 'Hear me woof',
@@ -112,7 +123,8 @@ export default {
 		{
 			title: 'Description',
 			name: 'description',
-			type: 'text'
+			type: 'text',
+			validation: rule => rule.required()
 		},
 		{
 			title: 'Portrait',
@@ -131,6 +143,7 @@ export default {
 					title: 'Credits'
 				},
 			],
-		},
+			validation: rule => rule.required()
+		}
 	]
 }
