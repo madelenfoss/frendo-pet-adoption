@@ -114,6 +114,22 @@
 /* Media queries */
 
 @media screen and (max-width: 1060px) {
+	/* .navbar__menu {
+		display: none;
+	}
+
+	.navbar__menu--visible {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto;
+		padding: 2rem;
+		background-color: var(--secondary-color);
+		justify-content: center;
+		border: 1.5px solid var(--primary-color);
+		z-index: 50;
+	} */
 	.navbar__menu-link {
 		font-size: 1.1rem;
 	}
