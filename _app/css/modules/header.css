@@ -144,6 +144,11 @@
 
 	.navbar__menu {
 		display: none;
+		width: 100vw;
+		left: 0;
+		background: var(--primary);
+		padding: 1rem 0 1rem 20rem;
+		justify-content:left;
 	}
 
 	.navbar__menu--visible {
@@ -152,9 +157,7 @@
 		flex-direction: column;
 		margin: 0 auto;
 		padding: 2rem;
-		background-color: var(--secondary-color);
 		margin-top: 4rem;
-		border: 1.5px solid var(--primary-color);
 		z-index: 40;
 	}
 
@@ -169,13 +172,13 @@
 	}
 }
 
-@media screen and (max-width: 440px) {
-	.navbar__menu-donate {
-		font-size: 1.1rem;
+@media screen and (max-width: 450px) {
+	.navbar__logo a {
+		margin: 0.5rem;
+		font-size: 1rem;
+		padding: 1.8rem 0.3rem;
 	}
-}
 
-@media screen and (max-width: 320px) {
 	.navbar__menu-donate {
 		font-size: 1rem;
 		padding: 1rem 0;
