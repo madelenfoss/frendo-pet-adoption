@@ -95,15 +95,20 @@
 .navbar__menu-donate {
 	margin: 2rem auto;
 	padding: 1rem 1.5rem;
+	font-size: 1.4rem;
 	font-weight: 400;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: var(--quinary);
+	color: var(--senary);
 	background: var(--quaternary);
 	border-radius: 3rem;
-	box-shadow: 0 3px 7px var(--tertiary);
+	box-shadow: 0 3px 5px var(--tertiary);
 	cursor: pointer;
 	transition: ease-in-out 0.2s;
+}
+
+.navbar__menu-donate:hover {
+	background: var(--septenary);
 }
 
 /* Media queries */
