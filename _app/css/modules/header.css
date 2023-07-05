@@ -70,10 +70,11 @@
 .navbar__submenu {
 	display: none;
 	position: absolute;
+	margin: 0 auto;
 	list-style: none;
 	padding: 0.5rem 0;
 	background: var(--primary);
-	width: 20rem;
+	width: 16rem;
 	border-radius: 0.5rem;
 	z-index: 30;
 }
@@ -81,63 +82,47 @@
 .navbar__submenu-link {
 	padding: 1rem;
 	text-transform: uppercase;
-	font-weight: bold;
-	width: 20rem;
+	width: 16rem;
 	cursor: pointer;
 }
 
-/* Fix so that link is changing color when hovering */
-.navbar__submenu-link a {
-	width: 100%;
-}
-
-.navbar__submenu-link:hover {
+/* .navbar__submenu-link:hover {
 	background: var(--tertiary);
 	color: var(--quinary);
 	border-radius: 0.5rem;
-}
+} */
 
 .navbar__menu-donate {
 	margin: 2rem auto;
 	padding: 1rem 1.5rem;
+	font-size: 1.4rem;
 	font-weight: 400;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: var(--quinary);
+	color: var(--senary);
 	background: var(--quaternary);
 	border-radius: 3rem;
-	box-shadow: 0 3px 7px var(--tertiary);
+	box-shadow: 0 3px 5px var(--tertiary);
 	cursor: pointer;
 	transition: ease-in-out 0.2s;
 }
 
-/* Media queries */
+.navbar__menu-donate:hover {
+	background: var(--septenary);
+}
 
-@media screen and (max-width: 1060px) {
+/* Media queries */
+@media screen and (max-width: 1030px) {
 	.navbar__menu-link {
 		font-size: 1.1rem;
 	}
 
-	.navbar__logo a {
-		padding: 2.3rem 0.3rem;
-		font-size: 1.3rem;
+	.navbar__menu-donate {
+		font-size: 1.2rem;
 	}
-
-	.navbar__submenu {
-		width: 15rem;
-	}
-
-	.navbar__submenu-link {
-		width: 15rem;
-	}
-
 }
 
-@media screen and (max-width: 1060px) {
-	.navbar__menu {
-		display: none;
-	}
-
+@media screen and (max-width: 910px) {
 	.navbar__mobile-menu-icon {
 		display: flex;
 		flex-direction: column;
@@ -157,9 +142,53 @@
 		border-radius: 1rem;
 	}
 
+	.navbar__menu {
+		display: none;
+		width: 100vw;
+		left: 0;
+		background: var(--primary);
+		padding: 1rem 0 1rem 20rem;
+		justify-content:left;
+	}
+
+	.navbar__menu--visible {
+		display: flex;
+		position: absolute;
+		flex-direction: column;
+		margin: 0 auto;
+		padding: 2rem;
+		margin-top: 4rem;
+		z-index: 40;
+	}
+
+	.navbar__menu-link:hover .navbar__submenu {
+		display: none;
+	}
+
 	.navbar__menu-donate {
 		width: 30vw;
 		text-align: center;
+		font-size: 1.4rem;
 	}
 }
 
+@media screen and (max-width: 450px) {
+	.navbar__logo a {
+		margin: 0.5rem;
+		font-size: 1rem;
+		padding: 1.8rem 0.3rem;
+	}
+
+	.navbar__menu-donate {
+		font-size: 1rem;
+		padding: 1rem 0;
+	}
+
+	.navbar__mobile-menu-icon-top,
+	.navbar__mobile-menu-icon-middle,
+	.navbar__mobile-menu-icon-bottom {
+		width: 3rem;
+		height: 0.3rem;
+		margin: 0.3rem 0;
+	}
+}
