@@ -41,9 +41,10 @@
 }
 
 .footer__copyright {
-	width: 50%;
-	text-align: center;
 	margin: 2rem auto;
+	width: 50%;
+	font-family: var(--logo-font);
+	text-align: center;
 	padding-top: 1.5rem;
 	color: var(--tertiary);
 	border-top: 1px solid var(--tertiary);
