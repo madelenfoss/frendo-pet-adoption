@@ -1,7 +1,4 @@
 :root {
-	--font-h1:'Signika'; 
-	--font-h3:'Signika';
-	
 	--primary: #61bdff;
 	--secondary: #D3EFFF;
 	--tertiary: #013e77;
@@ -9,4 +6,8 @@
 	--quinary: #FFFFFF;
 	--senary: black;
 	--septenary: #ff9900;
+
+	--logo-font: 'Roboto', sans-serif;
+	--font-h1:'Roboto', sans-serif; 
+	--font-h3:'Roboto', sans-serif;
 }
