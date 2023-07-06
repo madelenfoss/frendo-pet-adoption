@@ -38,6 +38,9 @@ Main page slideshow displaying images of the animals and the surrounding environ
 **Sanity studio deploy:**
 
 **Netlify:**
+https://frendopetadoption.netlify.app
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a225b635-920d-4dfe-be13-0a327b0642c8/deploy-status)](https://app.netlify.com/sites/frendopetadoption/deploys)
 
 ## Technologies used:
 - HTML
