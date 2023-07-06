@@ -187,6 +187,11 @@
 		background-color: var(--secondary);
 	}
 
+	.navbar__menu-link a:hover {
+		color: var(--tertiary);
+		text-shadow: none;
+	}
+
 	.navbar__menu-link:hover .navbar__submenu {
 		display: none;
 	}
