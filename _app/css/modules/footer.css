@@ -19,12 +19,13 @@
 }
 
 .footer__items-logo a {
-	padding: 2.3rem 0.3rem;
+	padding: 2rem 0.3rem;
 	margin: 2rem;
 	text-decoration: none;
 	color: var(--tertiary);
 	border: 0.2rem solid var(--tertiary);
 	border-radius: 10rem;
+	font-family: var(--logo-font);
 	font-weight: bold;
 	font-size: 1.3rem;
 }
@@ -40,9 +41,10 @@
 }
 
 .footer__copyright {
-	width: 50%;
-	text-align: center;
 	margin: 2rem auto;
+	width: 50%;
+	font-family: var(--logo-font);
+	text-align: center;
 	padding-top: 1.5rem;
 	color: var(--tertiary);
 	border-top: 1px solid var(--tertiary);
@@ -56,7 +58,7 @@
 	.footer__items-logo a {
 		margin: 1rem;
 		font-size: 1.1rem;
-		padding: 2rem 0.3rem;
+		padding: 1.7rem 0.3rem;
 	}
 }
 
@@ -64,7 +66,7 @@
 	.footer__items-logo a {
 		margin: 0.5rem;
 		font-size: 1rem;
-		padding: 1.8rem 0.3rem;
+		padding: 1.6rem 0.3rem;
 	}
 
 	.footer__items-link {
