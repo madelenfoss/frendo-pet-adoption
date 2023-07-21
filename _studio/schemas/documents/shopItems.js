@@ -15,6 +15,11 @@ export default {
 			options: {
 				source: 'itemName'
 			}
+		},
+		{
+			title: 'Description',
+			name: 'description',
+			type: 'text'
 		}
 	]
 }
