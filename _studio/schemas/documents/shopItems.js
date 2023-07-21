@@ -3,6 +3,18 @@ export default {
 	name: 'item',
 	type: 'document',
 	fields: [
-		
+		{
+			title: 'Item name',
+			name: 'itemName',
+			type: 'string',
+		},
+		{
+			title: 'Slug',
+			name: 'slug',
+			type: 'slug',
+			options: {
+				source: 'itemName'
+			}
+		}
 	]
 }
