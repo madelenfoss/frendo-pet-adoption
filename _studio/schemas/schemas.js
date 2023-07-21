@@ -4,6 +4,7 @@ import bird from "./documents/bird.js";
 import bunny from "./documents/bunny.js";
 import other from "./documents/other.js";
 import slideshow from "./documents/slideshow.js";
+import shop from "./documents/shop.js";
 
 export default [
 	dog,
@@ -11,5 +12,6 @@ export default [
 	bird,
 	bunny,
 	other,
-	slideshow
+	slideshow,
+	shop
 ]
