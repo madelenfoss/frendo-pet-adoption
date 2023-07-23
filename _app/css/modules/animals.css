@@ -1,0 +1,8 @@
+.dog__container {
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 3rem;
+	justify-content: space-between;
+}
