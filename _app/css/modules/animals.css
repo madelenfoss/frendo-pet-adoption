@@ -47,3 +47,29 @@
 	font-size: 1.4rem;
 	font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+	.animal__container {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.animal__container-item {
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	.animal__container-item-image {
+		display: flex;
+		transition: none;
+		align-self: center;
+	}
+
+	.animal__container-item-image:hover {
+		transform: none;
+	}
+
+}
