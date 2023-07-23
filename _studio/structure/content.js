@@ -14,7 +14,11 @@ export default Structure => {
 
 			divider(),
 
-			documentTypeListItem('slideshow')
+			documentTypeListItem('slideshow'),
+
+			divider(),
+
+			documentTypeListItem('shopItem'),
 
 		])
 }
