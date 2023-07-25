@@ -1,11 +1,4 @@
-.main {
-	position: relative;
-}
-
 .pet-info__back {
-	top: 14rem;
-	left: 4rem;
-	position: absolute;
 	text-transform: uppercase;
 	color: var(--tertiary);
 }
@@ -19,12 +12,29 @@
 	flex-direction: column;
 	margin: 3rem;
 	border: 0.1rem solid var(--tertiary);
+	justify-content: center;
+}
+
+.pet-info__image-and-sound {
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+	justify-content: center;
 }
 
 .pet-info__image {
 	margin: 1rem auto;
-	width: 50%;
-	min-width: 25rem;
+	width: 100%;
 	border: 0.5rem solid var(--quinary);
 	box-shadow: 6px 8px 10px var(--tertiary);
+}
+
+.pet-info__sound {
+	position: absolute;
+	bottom: 2.2rem;
+	right: 1rem;
+	width: 5rem;
+	height: 5rem;
+	background: var(--quaternary);
+	border-radius: 10rem;
 }
