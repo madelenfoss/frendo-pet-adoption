@@ -54,4 +54,6 @@
 .pet-info__sound:hover {
 	background: var(--quaternary);
 	color: var(--quinary);
+	transition: 0.4s ease-in-out;
+	transition-delay: 0.1s;
 }
