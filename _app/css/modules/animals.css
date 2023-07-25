@@ -1,16 +1,14 @@
 .animal__container {
 	display: grid;
-	margin: 0 auto;
+	margin: 0 auto 5rem auto;
 	width: 90%;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: repeat(auto, 1fr);
 	gap: 3rem;
-	justify-content: space-between;
 }
 
 .animal__container-item {
 	position: relative;
-	margin: 1rem;
 	width: 95%;
 	overflow: hidden;
 	border: 0.4rem solid var(--quinary);
