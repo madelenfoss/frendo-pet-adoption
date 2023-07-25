@@ -13,3 +13,10 @@
 .pet-info__back:hover {
 	color: var(--quaternary);
 }
+
+.pet-info__card {
+	display: flex;
+	flex-direction: column;
+	margin: 3rem;
+	border: 0.1rem solid var(--tertiary);
+}
