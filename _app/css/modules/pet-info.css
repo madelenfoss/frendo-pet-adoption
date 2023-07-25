@@ -1,0 +1,15 @@
+.main {
+	position: relative;
+}
+
+.pet-info__back {
+	top: 14rem;
+	left: 4rem;
+	position: absolute;
+	text-transform: uppercase;
+	color: var(--tertiary);
+}
+
+.pet-info__back:hover {
+	color: var(--quaternary);
+}
