@@ -20,3 +20,11 @@
 	margin: 3rem;
 	border: 0.1rem solid var(--tertiary);
 }
+
+.pet-info__image {
+	margin: 1rem auto;
+	width: 50%;
+	min-width: 25rem;
+	border: 0.5rem solid var(--quinary);
+	box-shadow: 6px 8px 10px var(--tertiary);
+}
