@@ -17,14 +17,14 @@
 .pet-info__card {
 	display: flex;
 	flex-direction: column;
-	margin: 3rem;
-	/* border: 0.1rem solid var(--tertiary); */
+	margin: 3rem auto 5rem auto;
 	justify-content: center;
+	color: var(--tertiary);
 }
 
 .pet-info__image-and-sound {
 	position: relative;
-	width: 50%;
+	width: 40%;
 	margin: 0 auto;
 	justify-content: center;
 }
@@ -57,6 +57,7 @@
 	transition: 0.4s ease-in-out;
 	transition-delay: 0.1s;
 }
+
 .pet-info__info-and-description {
 	margin: 3rem auto;
 	padding: 2rem;
@@ -71,12 +72,9 @@
 	list-style: none;
 	margin: 2rem auto;
 	padding: 2rem;
-	width: 70%;
+	width: 80%;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(auto, 1fr);
-	border: 0.1rem solid var(--tertiary);
-	border-radius: 1rem;
-	box-shadow: 3px 5px 10px var(--tertiary);
 }
 
 .pet-info__breed,
