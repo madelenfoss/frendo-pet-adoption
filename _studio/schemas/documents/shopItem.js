@@ -30,6 +30,11 @@ export default {
 			title: 'Price',
 			name: 'price',
 			type: 'number'
+		},
+		{
+			title: 'Image',
+			name: 'Image',
+			type: 'image'
 		}
 	],
 }
