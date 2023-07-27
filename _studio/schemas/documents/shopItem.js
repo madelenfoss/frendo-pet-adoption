@@ -21,5 +21,15 @@ export default {
 			name: 'description',
 			type: 'text',
 		},
+		{
+			title: 'Stock',
+			name: 'stock',
+			type: 'number'
+		},
+		{
+			title: 'Price',
+			name: 'price',
+			type: 'number'
+		}
 	],
 }
