@@ -56,6 +56,7 @@
 	color: var(--quinary);
 	transition: 0.4s ease-in-out;
 	transition-delay: 0.1s;
+	transform: rotate(-5deg);
 }
 
 .pet-info__info-and-description {
