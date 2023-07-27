@@ -82,3 +82,13 @@
 	font-size: 1.2rem;
 	margin: 0.5rem;
 }
+
+.pet-info__description {
+	margin: 0 auto;
+	padding: 2rem;
+	font-size: 1.2rem;
+	width: 70%;
+	border: 0.1rem solid var(--tertiary);
+	border-radius: 1rem;
+	box-shadow: 3px 5px 10px var(--tertiary);
+}
