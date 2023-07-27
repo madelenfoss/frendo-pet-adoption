@@ -57,6 +57,14 @@
 	transition: 0.4s ease-in-out;
 	transition-delay: 0.1s;
 }
+.pet-info__info-and-description {
+	margin: 3rem auto;
+	padding: 2rem;
+	border: 1px solid var(--tertiary);
+	border-radius: 1rem;
+	box-shadow: 3px 5px 10px var(--tertiary);
+	width: 80%;
+}
 
 .pet-info__info {
 	display: grid;
