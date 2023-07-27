@@ -58,6 +58,19 @@
 	transition-delay: 0.1s;
 }
 
+.pet-info__info {
+	display: grid;
+	list-style: none;
+	margin: 2rem auto;
+	padding: 2rem;
+	width: 70%;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(auto, 1fr);
+	border: 0.1rem solid var(--tertiary);
+	border-radius: 1rem;
+	box-shadow: 3px 5px 10px var(--tertiary);
+}
+
 .pet-info__breed,
 .pet-info__sex,
 .pet-info__age,
