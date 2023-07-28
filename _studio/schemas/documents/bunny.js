@@ -31,7 +31,8 @@ export default {
 			options: {
 				list: [
 					'Male',
-					'Female'
+					'Female',
+					'Female and male'
 				]
 			},
 			validation: rule => rule.required()
