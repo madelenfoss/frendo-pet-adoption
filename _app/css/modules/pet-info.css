@@ -119,9 +119,9 @@
 	}
 
 	.pet-info__sound {
-		width: 14vw;
-		height: 14vw;
-		font-size: 1rem;
+		width: 25vw;
+		height: 25vw;
+		font-size: 5vw;
 		transform: none;
 		transition: none;
 		transition-delay: none;
