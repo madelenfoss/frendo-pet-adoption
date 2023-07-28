@@ -114,6 +114,10 @@
 		width: 100%;
 	}
 
+	.pet-info__name {
+		margin-bottom: 0.5rem;
+	}
+
 	.pet-info__card {
 		width: 100%;
 	}
@@ -151,19 +155,19 @@
 	.pet-info__about {
 		width: 90%;
 		margin: 0 auto;
-		padding: 1rem 1rem 0 1rem;
+		padding: 1rem 0 0 0;
 	}
 
 	.pet-info__info,
 	.pet-info__description {
 		margin: 0 auto;
-		padding: 1rem 1rem 4rem 1rem;
+		padding: 1rem 0 4rem 0;
 		width: 90%;
 	}
 
 	.pet-info__info {
 		display: flex;
 		flex-direction: column;
-		padding: 0;
+		padding-bottom: 2rem;
 	}
 }
