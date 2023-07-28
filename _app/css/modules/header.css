@@ -116,7 +116,7 @@
 	border-radius: 3rem;
 	box-shadow: 0 3px 5px var(--tertiary);
 	cursor: pointer;
-	transition: ease-in-out 0.2s;
+	transition: color ease-in-out 0.2s;
 }
 
 .navbar__menu-donate:hover {
