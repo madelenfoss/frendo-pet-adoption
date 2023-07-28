@@ -4,8 +4,6 @@ export default function menuToggle() {
 	const navigationMenu = document.querySelector('.navbar__menu');
 	const navigationMenuIcon = document.querySelector('.navbar__mobile-menu-icon');
 
-	console.log(navigationMenu);
-
 	navigationMenuIcon.addEventListener('click', handleNavigationMenuIconClick);
 
 	function handleNavigationMenuIconClick(event) {
