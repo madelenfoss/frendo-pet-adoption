@@ -105,6 +105,15 @@
 }
 
 @media screen and (max-width: 768px) {
+	.pet-info__back {
+		display: flex;
+		justify-content: center;
+		margin: 1rem auto;
+		left: 0;
+		top: 2rem;
+		width: 100%;
+	}
+
 	.pet-info__card {
 		width: 100%;
 	}
