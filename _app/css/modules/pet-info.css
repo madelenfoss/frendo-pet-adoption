@@ -103,6 +103,7 @@
 	font-size: 1.2rem;
 	width: 80%;
 }
+
 @media screen and (max-width: 768px) {
 	.pet-info__card {
 		width: 100%;
@@ -116,4 +117,20 @@
 	.pet-info__image {
 		width: 100%;
 	}
+
+	.pet-info__sound {
+		width: 14vw;
+		height: 14vw;
+		font-size: 1rem;
+		transform: none;
+		transition: none;
+		transition-delay: none;
+	}
+
+	.pet-info__sound:hover {
+		background: rgb(255, 208, 0);
+		color: var(--tertiary);
+		transform: none;
+	}
+}
 
