@@ -132,5 +132,29 @@
 		color: var(--tertiary);
 		transform: none;
 	}
-}
 
+	.pet-info__info-and-description {
+		margin: 1rem auto;
+		width: 95%;
+		padding: 1rem;
+	}
+
+	.pet-info__about {
+		width: 90%;
+		margin: 0 auto;
+		padding: 1rem 1rem 0 1rem;
+	}
+
+	.pet-info__info,
+	.pet-info__description {
+		margin: 0 auto;
+		padding: 1rem 1rem 4rem 1rem;
+		width: 90%;
+	}
+
+	.pet-info__info {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+}
