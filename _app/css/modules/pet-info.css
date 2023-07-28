@@ -103,4 +103,17 @@
 	font-size: 1.2rem;
 	width: 80%;
 }
+@media screen and (max-width: 768px) {
+	.pet-info__card {
+		width: 100%;
+	}
+
+	.pet-info__image-and-sound {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.pet-info__image {
+		width: 100%;
+	}
 
