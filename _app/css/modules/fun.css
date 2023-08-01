@@ -6,3 +6,11 @@
 	grid-template-rows: repeat(auto, 1fr);
 	gap: 3rem;
 }
+.fun__container-link {
+	position: relative;
+	margin: 1rem auto;
+	width: 70%;
+	border: 0.4rem solid var(--quinary);
+	border-radius: 0.1rem;
+	box-shadow: 6px 8px 10px var(--tertiary);
+}
