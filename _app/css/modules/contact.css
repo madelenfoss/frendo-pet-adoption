@@ -2,6 +2,10 @@
 	font-family: var(--font-h1);
 }
 
+.contact__container {
+	margin: 0 auto;
+}
+
 .contact__p {
 	display: flex;
 	width: 100%;
