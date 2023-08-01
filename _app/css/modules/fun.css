@@ -6,6 +6,7 @@
 	grid-template-rows: repeat(auto, 1fr);
 	gap: 3rem;
 }
+
 .fun__container-link {
 	position: relative;
 	margin: 1rem auto;
@@ -21,4 +22,9 @@
 	left: 0;
 	width: 100%;
 	background: var(--quinary);
+}
+
+.fun__container-link-image {
+	width: 100%;
+	height: 100%;
 }
