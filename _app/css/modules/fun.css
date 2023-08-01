@@ -20,8 +20,12 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	padding: 1vw;
 	width: 100%;
-	background: var(--quinary);
+	font-size: 2vw;
+	background: rgba(255, 255, 255, 0.6);
+	text-align: center;
+	color: var(--tertiary);
 }
 
 .fun__container-link-image {
