@@ -36,6 +36,7 @@
 @media screen and (max-width: 1010px) {
 	.fun__container {
 		width: 100%;
+		gap: 0.5rem;
 	}
 
 	.fun__container-link {
@@ -57,6 +58,7 @@
 
 	.fun__container-link {
 		width: 90%;
+		margin-bottom: 2rem;
 	}
 
 	.fun__container-link-title {
