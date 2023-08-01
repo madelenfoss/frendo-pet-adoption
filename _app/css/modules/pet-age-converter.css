@@ -6,13 +6,12 @@
 	display: flex;
 	position: relative;
 	flex-direction: column;
-	margin: 2rem auto;
+	margin: 0 auto 5rem auto;
+	padding-bottom: 2rem;
 	width: 50%;
-	min-width: 460px;
-	height: 42rem;
 	align-items: center;
 	background-color: var(--quaternary);
-	border-radius: 20px;
+	border-radius: 1.2rem;
 	box-shadow: 0 6px 20px var(--tertiary);
 }
 
@@ -21,7 +20,7 @@
 	font-size: 25px;
 	width: 90%;
 	text-align: center;
-	color: var(--quinary);
+	color: var(--tertiary);
 }
 
 .converter__input {
@@ -31,7 +30,7 @@
 	font-size: 20px;
 	font-weight: 500;
 	color: var(--tertiary);
-	border-radius: 10px;
+	border-radius: 0.6rem;
 	border: none;
 	box-shadow: 0 4px 6px var(--tertiary) inset;
 }
@@ -39,7 +38,7 @@
 .converter__output-label {
 	width: 70%;
 	text-align: center;
-	color: var(--quinary);
+	color: var(--tertiary);
 	font-size: 25px;
 }
 
@@ -52,7 +51,7 @@
 					#ffffff, 
 					#ffffff,
 					#c6d8ff);
-	border-radius: 10px;
+	border-radius: 0.6rem;
 	box-shadow: 0 4px 6px var(--tertiary) inset;
 	color: var(--tertiary);
 }
@@ -65,6 +64,6 @@
 @media screen and (max-width: 768px) {
 	.converter {
 		width: 90%;
-		border-radius: 10px;
+		border-radius: 0.6rem;
 	}
 }
