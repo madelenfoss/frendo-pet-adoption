@@ -32,3 +32,35 @@
 	width: 100%;
 	height: 100%;
 }
+
+@media screen and (max-width: 1010px) {
+	.fun__container {
+		width: 100%;
+	}
+
+	.fun__container-link {
+		width: 90%;
+	}
+
+	.fun__container-link-title {
+		font-size: 1.5rem;
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.fun__container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.fun__container-link {
+		width: 90%;
+	}
+
+	.fun__container-link-title {
+		font-size: 1.6rem;
+		padding: 1rem;
+	}
+}
