@@ -31,6 +31,7 @@
 .adopt__container-link-image {
 	width: 100%;
 	height: 100%;
+	object-fit: fill;
 }
 
 @media screen and (max-width: 1010px) {
