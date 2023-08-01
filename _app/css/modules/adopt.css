@@ -2,7 +2,7 @@
 	display: grid;
 	margin: 0 auto 5rem auto;
 	width: 80%;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(auto, 1fr);
 	gap: 5rem;
 }
@@ -38,6 +38,7 @@
 	.adopt__container {
 		width: 90%;
 		gap: 3rem;
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.adopt__container-link-title {
