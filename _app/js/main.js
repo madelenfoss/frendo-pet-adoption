@@ -2,6 +2,7 @@ import menuToggle from "./modules/menuToggle.js";
 import petAgeConverter from "./modules/petAgeConverter.js";
 import fetchAllData from "./modules/fetchAllData.js";
 
+const fetchedData = await fetchAllData();
+
 menuToggle();
 petAgeConverter();
-fetchAllData();
