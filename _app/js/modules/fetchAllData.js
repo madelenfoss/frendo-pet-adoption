@@ -30,5 +30,7 @@ export default async function fetchAllData() {
 
 	 const allData = await sanity.fetch(query);
 	 
-	 console.log(query);
+	 return allData;
+
+	 /* Add try/catch */
 }
