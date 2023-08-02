@@ -1,5 +1,5 @@
 export default {
-	title: 'Slideshow',
+	title: 'Main page slideshow',
 	name: 'slideshow',
 	type: 'document',
 	fields: [
@@ -25,7 +25,7 @@ export default {
 							title: 'Alternative image description',
 							name: 'altText',
 							description: 'For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
-							type: 'text'
+							type: 'string'
 						},
 						{
 							title: 'Photographer',
