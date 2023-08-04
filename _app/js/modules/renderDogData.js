@@ -7,9 +7,10 @@ export default function renderDogData(dogs) {
 	};
 
 	function returnDogDOMElement(dog) {
-		const dogName = dog.dogName;
-		const dogImageUrl = dog.dogPortrait;
-		const dogImageAltText = dog.alternative;
+		const theDogs  = theDogs.find(theDog => theDog._type === 'dog');
+		const dogName = theDogs.name;
+		const dogImageUrl = theDogs.portrait;
+		const dogImageAltText = theDogs.alternative;
 
 		const dogItemElement = document.createElement('a');
 		const dogImageElement = document.createElement('img');
@@ -19,7 +20,7 @@ export default function renderDogData(dogs) {
 		dogImageElement.classList.add('animal__container-item-image');
 		dogNameElement.classList.add('animal__container-item-info');
 
-		dogItemElement.setAttribute('href', `/pet-info/?pet-info=${dog.slug}`);
+		dogItemElement.setAttribute('href', `/pet-info/?pet-info=${theDogs.slug}`);
 		dogImageElement.setAttribute('src', dogImageUrl);
 		dogImageElement.setAttribute('alt', dogImageAltText);
 		dogNameElement.textContent = dogName;
