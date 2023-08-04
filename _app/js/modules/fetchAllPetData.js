@@ -1,6 +1,6 @@
 import { sanity } from "../sanity.js";
 
-export default async function fetchAllData() {
+export default async function fetchAllPetData() {
 	const query =
 	`*[_type in ["dog", "cat", "bunny", "bird", "other", "slideshow", "shopItem"]] {
 		name,
@@ -23,14 +23,14 @@ export default async function fetchAllData() {
 		"dogSound": woof.asset->url ,
 		"catSound": meow.asset->url,
 		"birdSound": chirp.asset->url,
-		"slideshowImages": slideshowImages[].image.asset->url,
-		"slideshowAlternative": slideshowImages[].altText,
-		"slideshowCredits": slideshowImages[].photographer,
 	 }`;
 
-	 const allData = await sanity.fetch(query);
+	//  "slideshowImages": slideshowImages[].image.asset->url,
+	//  "slideshowAlternative": slideshowImages[].altText,
+	//  "slideshowCredits": slideshowImages[].photographer,
+	 const allPetData = await sanity.fetch(query);
 	 
-	 return allData;
+	 return allPetData;
 
 	 /* Add try/catch */
 }
