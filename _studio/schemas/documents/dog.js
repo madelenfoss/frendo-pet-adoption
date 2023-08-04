@@ -5,7 +5,7 @@ export default {
 	fields: [
 		{
 			title: 'Name',
-			name:	'dogName',
+			name:	'name',
 			type: 'string',
 			validation: rule => rule.required()
 		},
@@ -14,7 +14,7 @@ export default {
 			name: 'slug',
 			type: 'slug',
 			options: {
-				source: 'dogName'
+				source: 'name'
 			},
 			validation: rule => rule.required()
 		},
@@ -129,12 +129,12 @@ export default {
 		},
 		{
 			title: 'Portrait',
-			name: 'dogPortrait',
+			name: 'portrait',
 			type: 'image',
 			fields: [
 				{
 					title: 'Alternative text',
-					name: 'dogAlternative',
+					name: 'alternative',
 					description: 'Important! For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
 					type: 'string',
 				},
