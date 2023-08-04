@@ -3,6 +3,8 @@ import { sanity } from "../sanity.js";
 export default async function fetchAllData() {
 	const query =
 	`*[_type in ["dog", "cat", "bunny", "bird", "other", "slideshow", "shopItem"]] {
+		dogName,
+		dogPortrait,
 		name,
 		"slug": slug.current,
 		breed,
