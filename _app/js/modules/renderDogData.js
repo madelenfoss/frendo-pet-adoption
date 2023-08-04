@@ -7,8 +7,8 @@ export default function renderDogData(dogs) {
 	};
 
 	function returnDogDOMElement(dog) {
-		const dogName = dog.name;
-		const dogImageUrl = dog.portrait;
+		const dogName = dog.dogName;
+		const dogImageUrl = dog.dogPortrait;
 		const dogImageAltText = dog.alternative;
 
 		const dogItemElement = document.createElement('a');
