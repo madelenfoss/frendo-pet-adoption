@@ -3,8 +3,8 @@ export default function renderDogData(dogs) {
 	const allDogsContainer = document.querySelector('.animal__container');
 
 	// Function to filter out only dogs from the fetched data array
-	function filterDogs(data) {
-	return data.filter(dog => dog._type === "dog");
+	function filterDogs(dogs) {
+	return dogs.filter(dog => dog._type === 'dog');
 	}
 
 	// Filter the dogs data
@@ -47,7 +47,7 @@ export default function renderDogData(dogs) {
 			if (allDogsContainer) {
 				const dogCardElement = returnDogDOMElement(dog);
 				allDogsContainer.appendChild(dogCardElement);
-			};
+			}
 		});
 	}
 }
