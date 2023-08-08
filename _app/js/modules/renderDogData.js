@@ -4,7 +4,7 @@ export default function renderDogData(dogs) {
 
 	// Function to filter out only dogs from the fetched data array
 	function filterDogs(dogs) {
-	return dogs.filter(dog => dog._type === 'dog');
+	return dogs.filter(dog => dog.visibleDog === true);
 	}
 
 	// Filter the dogs data
@@ -16,10 +16,11 @@ export default function renderDogData(dogs) {
 		renderHTML();
 	};
 
-	function returnDogDOMElement(dog) {
-		const dogName = dog.name;
-		const dogImageUrl = dog.portrait;
-		const dogImageAltText = dog.alternative;
+	function returnDogDOMElement(dogsData) {
+		// const trueDog  = dogs.find(dog => dog.visibleDog === true);
+		const dogName = dogsData.name;
+		const dogImageUrl = dogsData.portrait;
+		const dogImageAltText = dogsData.alternative;
 
 		const dogItemElement = document.createElement('a');
 		const dogImageElement = document.createElement('img');
@@ -29,7 +30,7 @@ export default function renderDogData(dogs) {
 		dogImageElement.classList.add('animal__container-item-image');
 		dogNameElement.classList.add('animal__container-item-info');
 
-		dogItemElement.setAttribute('href', `/pet-info/?pet-info=${dog.slug}`);
+		dogItemElement.setAttribute('href', `/pet-info/?pet-info=${dogsData.slug}`);
 		dogImageElement.setAttribute('src', dogImageUrl);
 		dogImageElement.setAttribute('alt', dogImageAltText);
 		dogNameElement.textContent = dogName;
@@ -42,10 +43,10 @@ export default function renderDogData(dogs) {
 		return dogItemElement;
 	}
 
-	function renderHTML() {
+	function renderHTML(dogs) {
 		dogsData.forEach(dog => {
 			if (allDogsContainer) {
-				const dogCardElement = returnDogDOMElement(dog);
+				const dogCardElement = returnDogDOMElement(dogsData);
 				allDogsContainer.appendChild(dogCardElement);
 			}
 		});
