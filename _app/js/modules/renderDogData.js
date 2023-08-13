@@ -16,8 +16,6 @@ export default function renderDogData(dogs) {
 	};
 
 	function returnDogDOMElement(dog) {
-		console.log(dog);
-		// const trueDog  = dogs.find(dog => dog.visibleDog === true);
 		const dogName = dog.name;
 		const dogImageUrl = dog.portrait;
 		const dogImageAltText = dog.alternative;
@@ -43,7 +41,7 @@ export default function renderDogData(dogs) {
 		return dogItemElement;
 	}
 
-	function renderHTML(dogs) {
+	function renderHTML() {
 		dogs.forEach(dog => {
 			if (allDogsContainer) {
 				const dogCardElement = returnDogDOMElement(dog);
