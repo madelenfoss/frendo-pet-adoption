@@ -1,5 +1,6 @@
 export default function renderDogData(dogs) {
 	// Variables
+	const dogPage = document.querySelector('.dogs');
 	const allDogsContainer = document.querySelector('.animal__container');
 	
 	// Function to filter out only dogs from the fetched data array
@@ -12,7 +13,7 @@ export default function renderDogData(dogs) {
 
 	console.log(dogsData);
   
-	if (allDogsContainer) {
+	if (dogPage) {
 		renderHTML();
 	};
 
