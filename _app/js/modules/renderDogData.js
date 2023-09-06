@@ -10,8 +10,6 @@ export default function renderDogData(dogs) {
 
 	// Filter the dogs data
 	const dogsData = filterDogs(dogs);
-
-	console.log(dogsData);
   
 	if (dogPage) {
 		renderHTML();
@@ -46,7 +44,7 @@ export default function renderDogData(dogs) {
 
 	function renderHTML() {
 		dogsData.forEach(dogData => {
-			if (allDogsContainer) {
+			if (dogPage) {
 				const dogCardElement = returnDogDOMElement(dogData);
 				allDogsContainer.appendChild(dogCardElement);
 			}
