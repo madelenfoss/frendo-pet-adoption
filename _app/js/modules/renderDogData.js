@@ -44,9 +44,9 @@ export default function renderDogData(dogs) {
 	}
 
 	function renderHTML() {
-		dogs.forEach(dog => {
+		dogsData.forEach(dogData => {
 			if (allDogsContainer) {
-				const dogCardElement = returnDogDOMElement(dog);
+				const dogCardElement = returnDogDOMElement(dogData);
 				allDogsContainer.appendChild(dogCardElement);
 			}
 		});
