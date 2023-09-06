@@ -1,6 +1,6 @@
-export default function renderbirdData(birds) {
+export default function renderBirdData(birds) {
 	// Variables
-	const birdPage = document.querySelector('.bird');
+	const birdPage = document.querySelector('.birds');
 	const allBirdsContainer = document.querySelector('.animal__container');
 	
 	// Function to filter out only birds from the fetched data array
