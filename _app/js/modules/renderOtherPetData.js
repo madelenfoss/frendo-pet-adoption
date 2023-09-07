@@ -1,6 +1,6 @@
 export default function renderOtherPetData(otherPets) {
 	// Variables
-	const otherPetPage = document.querySelector('.otherPets');
+	const otherPetPage = document.querySelector('.others');
 	const allOtherPetsContainer = document.querySelector('.animal__container');
 	
 	// Function to filter out only other pets from the fetched data array
