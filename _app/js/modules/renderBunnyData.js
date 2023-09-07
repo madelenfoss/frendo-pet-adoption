@@ -3,15 +3,13 @@ export default function renderBunnyData(bunnies) {
 	const bunnyPage = document.querySelector('.bunnies');
 	const allBunniesContainer = document.querySelector('.animal__container');
 	
-	// Function to filter out only bunnies from the fetched data array
+	// Function to filter 'bunnies' from the fetched data array
 	 function filterBunnies(bunnies) {
 	 return bunnies.filter(bunny => bunny._type === 'bunny');
 		}
 
-	// Filter the bunnies data
+	// Filter the 'bunnies' data
 	const bunniesData = filterBunnies(bunnies);
-
-	console.log(bunniesData);
   
 	if (bunnyPage) {
 		renderHTML();
@@ -41,7 +39,6 @@ export default function renderBunnyData(bunnies) {
 		);
 
 		return bunnyItemElement;
-
 	}
 
 	function renderHTML() {

@@ -3,15 +3,13 @@ export default function renderBirdData(birds) {
 	const birdPage = document.querySelector('.birds');
 	const allBirdsContainer = document.querySelector('.animal__container');
 	
-	// Function to filter out only birds from the fetched data array
+	// Function to filter 'birds' from the fetched data array
 	 function filterBirds(birds) {
 	 return birds.filter(bird => bird._type === 'bird');
 		}
 
-	// Filter the birds data
+	// Filter the 'birds' data
 	const birdsData = filterBirds(birds);
-
-	console.log(birdsData);
   
 	if (birdPage) {
 		renderHTML();
@@ -41,7 +39,6 @@ export default function renderBirdData(birds) {
 		);
 
 		return birdItemElement;
-
 	}
 
 	function renderHTML() {

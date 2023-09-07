@@ -3,12 +3,12 @@ export default function renderDogData(dogs) {
 	const dogPage = document.querySelector('.dogs');
 	const allDogsContainer = document.querySelector('.animal__container');
 	
-	// Function to filter out only dogs from the fetched data array
+	// Function to filter 'dogs' from the fetched data array
 	 function filterDogs(dogs) {
 	 return dogs.filter(dog => dog._type === 'dog');
 		}
 
-	// Filter the dogs data
+	// Filter the 'dogs' data
 	const dogsData = filterDogs(dogs);
   
 	if (dogPage) {

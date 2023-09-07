@@ -3,15 +3,13 @@ export default function renderCatData(cats) {
 	const catPage = document.querySelector('.cats');
 	const allCatsContainer = document.querySelector('.animal__container');
 	
-	// Function to filter out only cats from the fetched data array
+	// Function to filter 'cats' from the fetched data array
 	 function filterCats(cats) {
 	 return cats.filter(cat => cat._type === 'cat');
 		}
 
-	// Filter the cats data
+	// Filter the 'cats' data
 	const catsData = filterCats(cats);
-
-	console.log(catsData);
   
 	if (catPage) {
 		renderHTML();
@@ -41,7 +39,6 @@ export default function renderCatData(cats) {
 		);
 
 		return catItemElement;
-
 	}
 
 	function renderHTML() {

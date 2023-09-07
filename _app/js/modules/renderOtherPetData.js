@@ -3,15 +3,13 @@ export default function renderOtherPetData(otherPets) {
 	const otherPetPage = document.querySelector('.others');
 	const allOtherPetsContainer = document.querySelector('.animal__container');
 	
-	// Function to filter out only other pets from the fetched data array
+	// Function to filter 'other pets' from the fetched data array
 	 function filterOtherPets(otherPets) {
 	 return otherPets.filter(otherPet => otherPet._type === 'other');
 		}
 
-	// Filter the other pets data
+	// Filter the 'other pets' data
 	const otherPetsData = filterOtherPets(otherPets);
-
-	console.log(otherPetsData);
   
 	if (otherPetPage) {
 		renderHTML();
