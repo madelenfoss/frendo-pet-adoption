@@ -1,0 +1,202 @@
+/* Fix membership page for better accessibility */
+
+.membership__h1 {
+	font-family: var(--font-h1);
+}
+
+.membership__p {
+	display: flex;
+	width: 100%;
+	padding: 0 5rem;
+	color: var(--tertiary);
+	font-size: 22px;
+	text-align: center;
+}
+
+.membership__container {
+	display: flex;
+	margin: 2.5rem auto;
+	width: 60vw;
+	height: 85vh;
+	background: var(--tertiary);
+	border-radius: 20px;
+	justify-content: center;
+	box-shadow: 0 8px 20px var(--tertiary);
+} 
+
+.membership__container-fieldset {
+	border: none;
+	width: 100%;
+}
+
+.membership__container-legend {
+	margin: 1rem auto 0.5rem auto;
+	padding: 1.5rem;
+	width: 80%;
+	font-family: var(--font-h3);
+	font-size: 28px;
+	color: var(--quinary);
+	border-bottom: 1px solid var(--quinary);
+	text-align: center;
+	text-shadow: 0 3px 6px var(--senary);
+}
+
+.membership__container-form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+#email, #fullname {
+	justify-content: left;
+	padding: 0.5rem 1rem;
+	width: 22rem;
+	height: 2.2rem;
+	border-inline: none;
+	border-radius: 10px;
+	box-shadow: 1px 2px 3px var(--tertiary) inset;
+}
+
+input:focus {
+	outline: 1px solid var(--primary);
+	border-bottom: 3px solid var(--primary);
+}
+
+input:invalid {
+	border-bottom: 3px solid var(--quaternary);
+}
+
+.membership__container-info {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.membership__container-info label {
+	font-family: var(--font-h3);
+	margin: 2rem 1rem 0.5rem 0;
+	color: var(--quinary);
+}
+
+.membership__container-donation {
+	display: flex;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 2rem auto;
+	justify-content: center;
+	color: var(--quinary);
+}
+
+.membership__container-donation--monthly {
+	display: flex;
+	flex-direction: column;
+	margin: 0 2rem 1rem 2rem;
+	padding: 1rem;
+	align-items: flex-start;
+	border: 1px solid var(--quinary);
+}	
+
+
+.membership__container-donation--monthly legend {
+	margin: 1rem auto;
+	width: 100%;
+	text-align: center;
+}
+
+.membership__container-donation--monthly label {
+	margin-left: 1.5rem;
+	margin-top: -2rem;
+	padding: 1rem;
+}
+
+.membership__container-donation--yearly {
+	display: flex;
+	flex-direction: column;
+	margin: 0 2rem 1rem 2rem;
+	padding: 1rem;
+	align-items:flex-start;
+	border: 1px solid var(--quinary);
+}
+
+.membership__container-donation--yearly legend {
+	margin: 1rem auto;
+	width: 100%;
+	text-align: center;
+}
+
+.membership__container-donation--yearly label {
+	margin-left: 1.5rem;
+	margin-top: -2rem;
+	padding: 1rem;
+}
+
+#submit {
+	margin: 0 auto 1rem auto;
+	width: 12rem;
+	height: 3rem;
+	justify-content: center;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	background-color: var(--primary);
+	font-family: var(--font-h1);
+	font-size: 20px;
+	color: var(--tertiary);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.502);
+	transition: ease-in-out 0.3s;
+}
+
+#submit:hover {
+	background-color: var(--quaternary);
+	color: var(--quinary);
+	text-shadow: 0 1px 2px var(--senary);
+}
+
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+	.membership__container {
+		width: 80%;
+	}
+
+	#email, #fullname {
+		width: 20rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.membership__p {
+		margin: 0 auto;
+		width: 90%;
+		padding: 0 1rem 1rem 1rem;
+	}
+
+	.membership__container {
+		width: 95%;
+		height: 41rem;
+	}
+	
+	#email, #fullname {
+		width: 18rem;
+	}
+
+	.membership__container-donation--monthly label {
+		margin-left: 1rem;
+		margin-top: -2rem;
+		padding: 1rem;
+
+	}
+
+	.membership__container-donation--yearly label {
+		margin-left: 1rem;
+		margin-top: -2rem;
+		padding: 1rem;
+
+	}
+
+}
+
+/* membership page 2 */
+.membership__payment-h1 { 
+	margin-bottom: 20rem;
+	font-family: var(--font-h1);
+
+} 
