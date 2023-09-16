@@ -172,7 +172,7 @@ input:invalid {
 	}
 
 	.membership__container-info {
-		width: 70%;
+		width: 80%;
 	}
 	
 	#email, #fullname {
@@ -190,9 +190,7 @@ input:invalid {
 		margin-left: 1rem;
 		margin-top: -2rem;
 		padding: 1rem;
-
 	}
-
 }
 
 /* membership page 2 */
