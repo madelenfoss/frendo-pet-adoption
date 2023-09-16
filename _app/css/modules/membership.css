@@ -167,6 +167,12 @@ input:invalid {
 	.membership__container-donation--yearly {
 		margin: 0 auto;
 		padding: 2rem;
+		width: 80%;
+	}
+
+	.membership__container-donation--monthly legend,
+	.membership__container-donation--yearly legend {
+		width: 70%;
 	}
 
 	.membership__container-donation--or {
