@@ -1,5 +1,3 @@
-/* Fix membership page for better accessibility */
-
 .membership__h1 {
 	font-family: var(--font-h1);
 }
@@ -15,9 +13,9 @@
 
 .membership__container {
 	display: flex;
-	margin: 2.5rem auto;
+	margin: 2.5rem auto 4rem auto;
 	width: 60vw;
-	height: 85vh;
+	height: auto;
 	background: var(--tertiary);
 	border-radius: 20px;
 	justify-content: center;
@@ -44,16 +42,27 @@
 .membership__container-form {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+}
+
+.membership__container-info {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 60%;
+}
+
+.membership__container-info label {
+	font-family: var(--font-h3);
+	margin: 2rem 1rem 0.5rem 0;
+	color: var(--quinary);
 }
 
 #email, #fullname {
 	justify-content: left;
 	padding: 0.5rem 1rem;
-	width: 22rem;
-	height: 2.2rem;
+	height: 2.6rem;
 	border-inline: none;
-	border-radius: 10px;
+	border-radius: 0.5rem;
 	box-shadow: 1px 2px 3px var(--tertiary) inset;
 }
 
@@ -64,18 +73,6 @@ input:focus {
 
 input:invalid {
 	border-bottom: 3px solid var(--quaternary);
-}
-
-.membership__container-info {
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
-}
-
-.membership__container-info label {
-	font-family: var(--font-h3);
-	margin: 2rem 1rem 0.5rem 0;
-	color: var(--quinary);
 }
 
 .membership__container-donation {
@@ -157,8 +154,8 @@ input:invalid {
 		width: 80%;
 	}
 
-	#email, #fullname {
-		width: 20rem;
+	.membership__container-info {
+		width: 70%;
 	}
 }
 
@@ -171,11 +168,15 @@ input:invalid {
 
 	.membership__container {
 		width: 95%;
-		height: 41rem;
+		height: auto;
+	}
+
+	.membership__container-info {
+		width: 70%;
 	}
 	
 	#email, #fullname {
-		width: 18rem;
+		width: 100%;
 	}
 
 	.membership__container-donation--monthly label {
