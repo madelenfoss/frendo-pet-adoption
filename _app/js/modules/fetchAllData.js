@@ -24,11 +24,11 @@ export default async function fetchAllData() {
 		"dogSound": woof.asset->url ,
 		"catSound": meow.asset->url,
 		"birdSound": chirp.asset->url,
+		"slideshowImages": slideshowImages[].image.asset->url,
+		"slideshowAlternative": slideshowImages[].altText,
+		"slideshowCredits": slideshowImages[].photographer,
 	 }`;
 
-	//  "slideshowImages": slideshowImages[].image.asset->url,
-	//  "slideshowAlternative": slideshowImages[].altText,
-	//  "slideshowCredits": slideshowImages[].photographer,
 	 const allPetData = await sanity.fetch(query);
 	 
 	 return allPetData;
