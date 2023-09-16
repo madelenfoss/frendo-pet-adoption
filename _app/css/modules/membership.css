@@ -83,7 +83,8 @@ input:invalid {
 	color: var(--quinary);
 }
 
-.membership__container-donation--monthly {
+.membership__container-donation--monthly,
+.membership__container-donation--yearly {
 	display: flex;
 	flex-direction: column;
 	margin: 0 2rem 1rem 2rem;
@@ -93,33 +94,14 @@ input:invalid {
 }	
 
 
-.membership__container-donation--monthly legend {
-	margin: 1rem auto;
-	width: 100%;
-	text-align: center;
-}
-
-.membership__container-donation--monthly label {
-	margin-left: 1.5rem;
-	margin-top: -2rem;
-	padding: 1rem;
-}
-
-.membership__container-donation--yearly {
-	display: flex;
-	flex-direction: column;
-	margin: 0 2rem 1rem 2rem;
-	padding: 1rem;
-	align-items:flex-start;
-	border: 1px solid var(--quinary);
-}
-
+.membership__container-donation--monthly legend,
 .membership__container-donation--yearly legend {
 	margin: 1rem auto;
 	width: 100%;
 	text-align: center;
 }
 
+.membership__container-donation--monthly label,
 .membership__container-donation--yearly label {
 	margin-left: 1.5rem;
 	margin-top: -2rem;
@@ -127,16 +109,17 @@ input:invalid {
 }
 
 #submit {
-	margin: 0 auto 1rem auto;
-	width: 12rem;
-	height: 3rem;
+	margin: 0 auto 3rem auto;
+	padding: 1.2rem;
+	width: 50%;
 	justify-content: center;
-	border-radius: 20px;
+	border-radius: 1rem;
 	border: none;
 	cursor: pointer;
 	background-color: var(--primary);
 	font-family: var(--font-h1);
-	font-size: 20px;
+	font-size: 1.1rem;
+	font-weight: 500;
 	color: var(--tertiary);
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.502);
 	transition: ease-in-out 0.3s;
@@ -168,28 +151,32 @@ input:invalid {
 
 	.membership__container {
 		width: 95%;
-		height: auto;
 	}
 
 	.membership__container-info {
 		width: 80%;
 	}
-	
-	#email, #fullname {
+
+	.membership__container-donation {
+		flex-direction: column;
+		width: 80%;
+		font-size: 1.2rem;
+	}
+
+	.membership__container-donation--monthly,
+	.membership__container-donation--yearly {
+		margin: 0 auto;
+		padding: 2rem;
+	}
+
+	.membership__container-donation--or {
+		margin: 1rem auto;
 		width: 100%;
+		text-align: center;
 	}
 
-	.membership__container-donation--monthly label {
-		margin-left: 1rem;
-		margin-top: -2rem;
-		padding: 1rem;
-
-	}
-
-	.membership__container-donation--yearly label {
-		margin-left: 1rem;
-		margin-top: -2rem;
-		padding: 1rem;
+	#submit {
+		width: 80%;
 	}
 }
 
@@ -197,5 +184,4 @@ input:invalid {
 .membership__payment-h1 { 
 	margin-bottom: 20rem;
 	font-family: var(--font-h1);
-
 } 
