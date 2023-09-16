@@ -15,9 +15,9 @@
 
 .about__image {
 	display: block;
-	margin: 2rem auto;
+	margin: 2rem auto 4rem auto;
 	width: 50%;
-	min-width: 450px;
+	min-width: 45rem;
 	align-items: center;
 	border-radius: 20px;
 	box-shadow: 0 5px 10px var(--tertiary);
@@ -30,8 +30,17 @@
 	}
 
 	.about__p {
-		margin: 1rem;
-		width: 90%;
+		width: 95%;
 		padding: 1rem 1.5rem;
+	}
+ }
+
+ @media screen and (max-width: 768px) {
+	.about__image {
+		min-width: 10rem;
+	}
+
+	.about__p {
+		width: 100%;
 	}
  }
