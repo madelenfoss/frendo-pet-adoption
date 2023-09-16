@@ -22,3 +22,16 @@
 	border-radius: 20px;
 	box-shadow: 0 5px 10px var(--tertiary);
 }
+
+@media screen and (max-width: 768px) {
+	.about__image {
+		width: 95%;
+		border-radius: 5px;
+	}
+
+	.about__p {
+		margin: 1rem;
+		width: 90%;
+		padding: 1rem 1.5rem;
+	}
+ }
