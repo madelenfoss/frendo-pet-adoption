@@ -1,0 +1,24 @@
+.about__container {
+	margin: 0 auto;
+}
+
+.about__p {
+	display: flex;
+	width: 100%;
+	margin: 1rem auto;
+	padding: 1rem 5rem;
+	color: var(--tertiary);
+	font-size: 22px;
+	justify-content: center;
+	text-align: center;
+}
+
+.about__image {
+	display: block;
+	margin: 2rem auto;
+	width: 50%;
+	min-width: 450px;
+	align-items: center;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px var(--tertiary);
+}
