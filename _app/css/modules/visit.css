@@ -1,0 +1,41 @@
+.visit__container {
+	margin: 0 auto;
+}
+
+.visit__container-p {
+	display: flex;
+	width: 100%;
+	margin: 1rem auto;
+	padding: 1rem 5rem;
+	color: var(--tertiary);
+	font-size: 22px;
+	justify-content: center;
+	text-align: center;
+}
+
+.visit__container-h2 {
+	margin: 1rem auto;
+	font-family: var(--font-h3);
+	font-size: 30px;
+	text-shadow: 0 4px 4px var(--primary);
+	width: 100%;
+	text-align: center;
+	color: var(--tertiary);
+}
+
+.visit__container-opening-hours {
+	text-align: center;
+	line-height: 1.5rem;
+	font-weight: 500;
+	color: var(--tertiary);
+}
+
+.visit__container-image {
+	display: block;
+	margin: 2rem auto 5rem auto;
+	width: 50%;
+	min-width: 45rem;
+	align-items: center;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px var(--tertiary);
+}
