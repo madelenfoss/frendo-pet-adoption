@@ -3,14 +3,12 @@
 }
 
 .about__p {
-	display: flex;
 	width: 100%;
 	margin: 1rem auto;
 	padding: 1rem 5rem;
 	color: var(--tertiary);
 	font-size: 22px;
-	justify-content: center;
-	text-align: center;
+	text-align: left;
 }
 
 .about__image {
