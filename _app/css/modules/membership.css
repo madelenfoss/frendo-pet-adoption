@@ -3,12 +3,11 @@
 }
 
 .membership__p {
-	display: flex;
 	width: 100%;
 	padding: 0 5rem;
 	color: var(--tertiary);
 	font-size: 22px;
-	text-align: center;
+	text-align: left;
 }
 
 .membership__container {
