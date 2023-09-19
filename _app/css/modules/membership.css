@@ -13,7 +13,7 @@
 
 .membership__container {
 	display: flex;
-	margin: 2.5rem auto 4rem auto;
+	margin: 2.5rem auto 5rem auto;
 	width: 60vw;
 	height: auto;
 	background: var(--tertiary);
