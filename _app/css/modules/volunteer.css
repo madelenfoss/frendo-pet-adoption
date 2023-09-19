@@ -1,0 +1,13 @@
+.volunteer__container {
+	margin: 0 auto;
+}
+
+.volunteer__container-paragraph {
+	display: flex;
+	width: 100%;
+	margin: 1rem auto;
+	padding: 1rem 5rem;
+	color: var(--tertiary);
+	font-size: 22px;
+	text-align: left;
+}
