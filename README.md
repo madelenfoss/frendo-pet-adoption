@@ -54,6 +54,13 @@ https://frendopetadoption.netlify.app
 Scroll to top button:
 https://www.freecodecamp.org/news/back-to-top-button-and-page-progressbar-with-html-css-and-js/
 
+All pet photos from:
+Unsplash.com
+Pexels.com
+
+Icons from:
+Icons8.com
+
 ## Access:
 - http://localhost:5500
 - http://localhost:3000
