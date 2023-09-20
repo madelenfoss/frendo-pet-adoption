@@ -1,0 +1,20 @@
+.shop__announcement {
+	margin: 1rem auto 5rem auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+	color: var(--tertiary);
+}
+
+.shop__announcement-title {
+	margin: 1rem auto;
+	font-size: 2rem;
+}
+
+.shop__announcement-image {
+	margin: 1rem auto;
+	padding: 1rem;
+	filter: drop-shadow(1px 5px 3px var(--tertiary));
+}
