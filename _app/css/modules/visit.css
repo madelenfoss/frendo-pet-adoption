@@ -2,7 +2,7 @@
 	margin: 0 auto;
 }
 
-.visit__container-p {
+.visit__container-paragraph {
 	width: 100%;
 	margin: 1rem auto;
 	padding: 1rem 5rem;
@@ -12,7 +12,7 @@
 }
 
 .visit__container-h2 {
-	margin: 1rem auto;
+	margin: 2rem auto;
 	font-family: var(--font-h3);
 	font-size: 30px;
 	text-shadow: 0 4px 4px var(--primary);
@@ -23,14 +23,15 @@
 
 .visit__container-opening-hours {
 	text-align: center;
-	line-height: 1.5rem;
+	line-height: 2.5rem;
 	font-weight: 500;
+	font-size: 1.5rem;
 	color: var(--tertiary);
 }
 
 .visit__container-image {
 	display: block;
-	margin: 2rem auto 5rem auto;
+	margin: 3rem auto 5rem auto;
 	width: 50%;
 	min-width: 45rem;
 	align-items: center;
