@@ -3,8 +3,16 @@ export default function dogDetails(dogs) {
 
 	const urlParams = new URLSearchParams(window.location.search);
 	const dogSlug = urlParams.get('dog');
-	const catSlug = urlParams.get('cat');
-	const birdSlug = urlParams.get('bird');
-	const bunnySlug = urlParams.get('bunny');
-	const otherSlug = urlParams.get('other');
+	// const catSlug = urlParams.get('cat');
+	// const birdSlug = urlParams.get('bird');
+	// const bunnySlug = urlParams.get('bunny');
+	// const otherSlug = urlParams.get('other');
+
+	if (dogDetailsContainer) {
+		renderHTML()
+	}
+
+	function renderHTML() {
+		const currentDog = dogs.find(dog => dog.slug === dogSlug);
+	}
 }
