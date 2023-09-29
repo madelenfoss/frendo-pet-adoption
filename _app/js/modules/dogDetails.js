@@ -59,7 +59,7 @@ export default function dogDetails(dogs) {
 
 		const dogDetailsSubName = document.createElement('h2');
 		const dogDetailsSubNameSpan = document.createElement('span');
-		const dogDetailsPetDescriptiom = document.createElement('p');
+		const dogDetailsPetDescription = document.createElement('p');
 
 		// Add classlist names
 		dogDetailsCard.classList.add('pet-info__card');
@@ -78,6 +78,7 @@ export default function dogDetails(dogs) {
 		dogDetailsPetInfoLiveWithCats.classList.add('pet-info__live-with-cats');
 		dogDetailsPetInfoLiveWithChildren.classList.add('pet-info__live-with-children');
 		dogDetailsPetInfoIdealHome.classList.add('pet-info__ideal-home');
-	
+		dogDetailsSubName.classList.add('pet-info__about');
+		dogDetailsPetDescription.classList.add('pet-info__description');
 	}
 }
