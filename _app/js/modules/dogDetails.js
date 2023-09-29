@@ -22,6 +22,14 @@ export default function dogDetails(dogs) {
 		const dogDetailsImage = document.createElement('img');
 		const dogDetailsSoundButton = document.createElement('button');
 		const dogDetailsPetInfoAndDescription = document.createElement('div');
-		const dogDetailsPetInfo = 
+		const dogDetailsPetInfo = document.createElement('ul');
+		const dogDetailsPetInfoBreed = document.createElement('li');
+		const dogDetailsPetInfoSex = document.createElement('li');
+		const dogDetailsPetInfoAge = document.createElement('li');
+		const dogDetailsPetInfoSize = document.createElement('li');
+		const dogDetailsPetInfoLiveWithDogs = document.createElement('li');
+		const dogDetailsPetInfoLiveWithCats = document.createElement('li');
+		const dogDetailsPetInfoLiveWithChildren = document.createElement('li');
+		const dogDetailsPetInfoIdealHome = document.createElement('li');
 	}
 }
