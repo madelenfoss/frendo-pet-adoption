@@ -103,6 +103,36 @@ export default function dogDetails(dogs) {
 		dogDetailsSubName.innerText = `More about ${currentDog.name}`;
 		dogDetailsPetDescription.innerText = `${currentDog.description}`;
 
+		// Append elements
+		dogDetailsContainer.appendChild(dogDetailsCard);
+
+		dogDetailsCard.append(
+			dogDetailsName,
+			dogDetailsImageAndSoundContainer,
+			dogDetailsPetInfoAndDescription
+		)
+
+		dogDetailsImageAndSoundContainer.append(
+			dogDetailsImage,
+			dogDetailsSoundButton
+		)
+
+		dogDetailsPetInfoAndDescription.append(
+			dogDetailsPetInfo,
+			dogDetailsSubName,
+			dogDetailsPetDescription
+		)
+
+		dogDetailsPetInfo.append(
+			dogDetailsPetInfoBreed,
+			dogDetailsPetInfoSex,
+			dogDetailsPetInfoAge,
+			dogDetailsPetInfoSize,
+			dogDetailsPetInfoLiveWithDogs,
+			dogDetailsPetInfoLiveWithCats,
+			dogDetailsPetInfoLiveWithChildren
+		)
+		
 
 	}
 }
