@@ -58,22 +58,22 @@ export default function dogDetails(dogs) {
 		const dogDetailsPetInfoIdealHomeSpan = document.createElement('span');
 
 		// Add classlist names
-		dogDetailsCard.classList.add('');
-		dogDetailsName.classList.add('');
-		dogDetailsImageAndSoundContainer.classList.add('');
-		dogDetailsImage.classList.add('');
-		dogDetailsSoundButton.classList.add('');
-		dogDetailsPetInfoAndDescription.classList.add('');
-		dogDetailsPetInfo.classList.add('');
+		dogDetailsCard.classList.add('pet-info__card');
+		dogDetailsName.classList.add('pet-info__name');
+		dogDetailsImageAndSoundContainer.classList.add('pet-info__image-and-sound');
+		dogDetailsImage.classList.add('pet-info__image');
+		dogDetailsSoundButton.classList.add('pet-info__sound');
+		dogDetailsPetInfoAndDescription.classList.add('pet-info__info-and-description');
+		dogDetailsPetInfo.classList.add('pet-info__info');
 
-		dogDetailsPetInfoBreed.classList.add('');
-		dogDetailsPetInfoSex.classList.add('');
-		dogDetailsPetInfoAge.classList.add('');
-		dogDetailsPetInfoSize.classList.add('');
-		dogDetailsPetInfoLiveWithDogs.classList.add('');
-		dogDetailsPetInfoLiveWithCats.classList.add('');
-		dogDetailsPetInfoLiveWithChildren.classList.add('');
-		dogDetailsPetInfoIdealHome.classList.add('');
+		dogDetailsPetInfoBreed.classList.add('pet-info__breed');
+		dogDetailsPetInfoSex.classList.add('pet-info__sex');
+		dogDetailsPetInfoAge.classList.add('pet-info__age');
+		dogDetailsPetInfoSize.classList.add('pet-info__size');
+		dogDetailsPetInfoLiveWithDogs.classList.add('pet-info__live-with-dogs');
+		dogDetailsPetInfoLiveWithCats.classList.add('pet-info__live-with-cats');
+		dogDetailsPetInfoLiveWithChildren.classList.add('pet-info__live-with-children');
+		dogDetailsPetInfoIdealHome.classList.add('pet-info__ideal-home');
 	
 	}
 }
