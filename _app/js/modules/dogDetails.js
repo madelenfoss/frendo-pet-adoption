@@ -2,11 +2,7 @@ export default function dogDetails(dogs) {
 	const dogDetailsContainer = document.querySelector('.pet-info__container');
 
 	const urlParams = new URLSearchParams(window.location.search);
-	const dogSlug = urlParams.get('dog');
-	// const catSlug = urlParams.get('cat');
-	// const birdSlug = urlParams.get('bird');
-	// const bunnySlug = urlParams.get('bunny');
-	// const otherSlug = urlParams.get('other');
+	const slug = urlParams.get('pet-info');
 
 	if (dogDetailsContainer) {
 		renderHTML()
@@ -14,7 +10,7 @@ export default function dogDetails(dogs) {
 
 	function renderHTML() {
 		// Finds the slug of the current dog
-		const currentDog = dogs.find(dog => dog.slug === dogSlug);
+		const currentDog = dogs.find(dog => dog.slug === slug);
 
 		// Create elements
 		const dogDetailsCard = document.createElement('div');
@@ -81,9 +77,9 @@ export default function dogDetails(dogs) {
 
 		// Add attributes and inner text
 		dogDetailsName.innerText = `${currentDog.name}`;
-		dogDetailsImage.setAttribute('src', currentDog.image);
+		dogDetailsImage.setAttribute('src', currentDog.portrait);
 		dogDetailsImage.setAttribute('alt', currentDog.alternative);
-		dogDetailsSoundButton.innerText = "Hear med woof!";
+		dogDetailsSoundButton.innerText = "Hear me woof!";
 		dogDetailsPetInfoBreedElement.innerText = "Breed:";
 		dogDetailsPetInfoBreedSpan.innerText = `${currentDog.breed}`;
 		dogDetailsPetInfoSexElement.innerText = "Sex:";
@@ -104,23 +100,9 @@ export default function dogDetails(dogs) {
 		dogDetailsPetDescription.innerText = `${currentDog.description}`;
 
 		// Append elements
-		dogDetailsContainer.appendChild(dogDetailsCard);
-
-		dogDetailsCard.append(
-			dogDetailsName,
-			dogDetailsImageAndSoundContainer,
-			dogDetailsPetInfoAndDescription
-		)
-
 		dogDetailsImageAndSoundContainer.append(
 			dogDetailsImage,
 			dogDetailsSoundButton
-		)
-
-		dogDetailsPetInfoAndDescription.append(
-			dogDetailsPetInfo,
-			dogDetailsSubName,
-			dogDetailsPetDescription
 		)
 
 		dogDetailsPetInfo.append(
@@ -132,7 +114,22 @@ export default function dogDetails(dogs) {
 			dogDetailsPetInfoLiveWithCats,
 			dogDetailsPetInfoLiveWithChildren
 		)
+
+		dogDetailsPetInfoAndDescription.append(
+			dogDetailsPetInfo,
+			dogDetailsSubName,
+			dogDetailsPetDescription
+		)
+
+	
+		dogDetailsCard.append(
+			dogDetailsName,
+			dogDetailsImageAndSoundContainer,
+			dogDetailsPetInfoAndDescription
+		)
 		
+		dogDetailsContainer.appendChild(dogDetailsCard)
+
 
 	}
 }
