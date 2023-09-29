@@ -13,6 +13,15 @@ export default function dogDetails(dogs) {
 	}
 
 	function renderHTML() {
+		// Finds the slug of the current dog
 		const currentDog = dogs.find(dog => dog.slug === dogSlug);
+
+		const dogDetailsCard = document.createElement('div');
+		const dogDetailsName = document.createElement('h1');
+		const dogDetailsImageAndSoundContainer = document.createElement('div');
+		const dogDetailsImage = document.createElement('img');
+		const dogDetailsSoundButton = document.createElement('button');
+		const dogDetailsPetInfoAndDescription = document.createElement('div');
+		const dogDetailsPetInfo = 
 	}
 }
