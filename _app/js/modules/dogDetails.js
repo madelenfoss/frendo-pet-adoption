@@ -69,7 +69,6 @@ export default function dogDetails(dogs) {
 		dogDetailsSoundButton.classList.add('pet-info__sound');
 		dogDetailsPetInfoAndDescription.classList.add('pet-info__info-and-description');
 		dogDetailsPetInfo.classList.add('pet-info__info');
-
 		dogDetailsPetInfoBreed.classList.add('pet-info__breed');
 		dogDetailsPetInfoSex.classList.add('pet-info__sex');
 		dogDetailsPetInfoAge.classList.add('pet-info__age');
@@ -80,5 +79,11 @@ export default function dogDetails(dogs) {
 		dogDetailsPetInfoIdealHome.classList.add('pet-info__ideal-home');
 		dogDetailsSubName.classList.add('pet-info__about');
 		dogDetailsPetDescription.classList.add('pet-info__description');
+
+		// Add attributes and inner text
+		dogDetailsName.innerText = `${currentDog.name}`;
+		dogDetailsImage.setAttribute('src', currentDog.image);
+		dogDetailsImage.setAttribute('alt', currentDog.alternative);
+
 	}
 }
