@@ -16,6 +16,7 @@ export default function dogDetails(dogs) {
 		// Finds the slug of the current dog
 		const currentDog = dogs.find(dog => dog.slug === dogSlug);
 
+		// Create elements
 		const dogDetailsCard = document.createElement('div');
 		const dogDetailsName = document.createElement('h1');
 		const dogDetailsImageAndSoundContainer = document.createElement('div');
@@ -55,5 +56,24 @@ export default function dogDetails(dogs) {
 		const dogDetailsPetInfoIdealHome = document.createElement('li');
 		const dogDetailsPetInfoIdealHomeElement = document.createElement('b');
 		const dogDetailsPetInfoIdealHomeSpan = document.createElement('span');
+
+		// Add classlist names
+		dogDetailsCard.classList.add('');
+		dogDetailsName.classList.add('');
+		dogDetailsImageAndSoundContainer.classList.add('');
+		dogDetailsImage.classList.add('');
+		dogDetailsSoundButton.classList.add('');
+		dogDetailsPetInfoAndDescription.classList.add('');
+		dogDetailsPetInfo.classList.add('');
+
+		dogDetailsPetInfoBreed.classList.add('');
+		dogDetailsPetInfoSex.classList.add('');
+		dogDetailsPetInfoAge.classList.add('');
+		dogDetailsPetInfoSize.classList.add('');
+		dogDetailsPetInfoLiveWithDogs.classList.add('');
+		dogDetailsPetInfoLiveWithCats.classList.add('');
+		dogDetailsPetInfoLiveWithChildren.classList.add('');
+		dogDetailsPetInfoIdealHome.classList.add('');
+	
 	}
 }
