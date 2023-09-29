@@ -59,6 +59,7 @@ export default function dogDetails(dogs) {
 
 		const dogDetailsSubName = document.createElement('h2');
 		const dogDetailsSubNameSpan = document.createElement('span');
+		const dogDetailsPetDescriptiom = document.createElement('p');
 
 		// Add classlist names
 		dogDetailsCard.classList.add('pet-info__card');
