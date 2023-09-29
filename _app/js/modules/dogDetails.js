@@ -58,7 +58,6 @@ export default function dogDetails(dogs) {
 		const dogDetailsPetInfoIdealHomeSpan = document.createElement('span');
 
 		const dogDetailsSubName = document.createElement('h2');
-		const dogDetailsSubNameSpan = document.createElement('span');
 		const dogDetailsPetDescription = document.createElement('p');
 
 		// Add classlist names
@@ -84,6 +83,26 @@ export default function dogDetails(dogs) {
 		dogDetailsName.innerText = `${currentDog.name}`;
 		dogDetailsImage.setAttribute('src', currentDog.image);
 		dogDetailsImage.setAttribute('alt', currentDog.alternative);
+		dogDetailsSoundButton.innerText = "Hear med woof!";
+		dogDetailsPetInfoBreedElement.innerText = "Breed:";
+		dogDetailsPetInfoBreedSpan.innerText = `${currentDog.breed}`;
+		dogDetailsPetInfoSexElement.innerText = "Sex:";
+		dogDetailsPetInfoSexSpan.innerText = `${currentDog.sex}`;
+		dogDetailsPetInfoAgeElement.innerText = "Age:";
+		dogDetailsPetInfoAgeSpan.innerText = `${currentDog.age}`;
+		dogDetailsPetInfoSizeElement.innerText = "Size:";
+		dogDetailsPetInfoSizeSpan.innerText = `${currentDog.size}`;
+		dogDetailsPetInfoLiveWithDogsElement.innerText = "Living with dogs:";
+		dogDetailsPetInfoLiveWithDogsSpan.innerText = `${currentDog.liveWithDogs}`;
+		dogDetailsPetInfoLiveWithCatsElement.innerText = "Living with cats:";
+		dogDetailsPetInfoLiveWithCatsSpan.innerText = `${currentDog.liveWithCats}`;
+		dogDetailsPetInfoLiveWithChildrenElement.innerText = "Living with children:";
+		dogDetailsPetInfoLiveWithChildrenSpan.innerText = `${currentDog.liveWithChildren}`;
+		dogDetailsPetInfoIdealHomeElement.innerText = "Ideal home location:";
+		dogDetailsPetInfoIdealHomeSpan.innerText = `${currentDog.idealHome}`;
+		dogDetailsSubName.innerText = `More about ${currentDog.name}`;
+		dogDetailsPetDescription.innerText = `${currentDog.description}`;
+
 
 	}
 }
