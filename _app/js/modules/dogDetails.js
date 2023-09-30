@@ -5,10 +5,10 @@ export default function dogDetails(dogs) {
 	const slug = urlParams.get('pet-info');
 
 	if (dogDetailsContainer) {
-		renderHTML()
+		renderDogHTML()
 	}
 
-	function renderHTML() {
+	function renderDogHTML() {
 		// Finds the slug of the current dog
 		const currentDog = dogs.find(dog => dog.slug === slug);
 
