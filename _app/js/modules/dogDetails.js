@@ -80,21 +80,21 @@ export default function dogDetails(dogs) {
 		dogDetailsImage.setAttribute('src', currentDog.portrait);
 		dogDetailsImage.setAttribute('alt', currentDog.alternative);
 		dogDetailsSoundButton.innerText = "Hear me woof!";
-		dogDetailsPetInfoBreedElement.innerText = "Breed:";
+		dogDetailsPetInfoBreedElement.innerText = "Breed: ";
 		dogDetailsPetInfoBreedSpan.innerText = `${currentDog.breed}`;
-		dogDetailsPetInfoSexElement.innerText = "Sex:";
+		dogDetailsPetInfoSexElement.innerText = "Sex: ";
 		dogDetailsPetInfoSexSpan.innerText = `${currentDog.sex}`;
-		dogDetailsPetInfoAgeElement.innerText = "Age:";
+		dogDetailsPetInfoAgeElement.innerText = "Age: ";
 		dogDetailsPetInfoAgeSpan.innerText = `${currentDog.age}`;
-		dogDetailsPetInfoSizeElement.innerText = "Size:";
+		dogDetailsPetInfoSizeElement.innerText = "Size: ";
 		dogDetailsPetInfoSizeSpan.innerText = `${currentDog.size}`;
-		dogDetailsPetInfoLiveWithDogsElement.innerText = "Living with dogs:";
+		dogDetailsPetInfoLiveWithDogsElement.innerText = "Living with dogs: ";
 		dogDetailsPetInfoLiveWithDogsSpan.innerText = `${currentDog.liveWithDogs}`;
-		dogDetailsPetInfoLiveWithCatsElement.innerText = "Living with cats:";
+		dogDetailsPetInfoLiveWithCatsElement.innerText = "Living with cats: ";
 		dogDetailsPetInfoLiveWithCatsSpan.innerText = `${currentDog.liveWithCats}`;
-		dogDetailsPetInfoLiveWithChildrenElement.innerText = "Living with children:";
+		dogDetailsPetInfoLiveWithChildrenElement.innerText = "Living with children: ";
 		dogDetailsPetInfoLiveWithChildrenSpan.innerText = `${currentDog.liveWithChildren}`;
-		dogDetailsPetInfoIdealHomeElement.innerText = "Ideal home location:";
+		dogDetailsPetInfoIdealHomeElement.innerText = "Ideal home location: ";
 		dogDetailsPetInfoIdealHomeSpan.innerText = `${currentDog.idealHome}`;
 		dogDetailsSubName.innerText = `More about ${currentDog.name}`;
 		dogDetailsPetDescription.innerText = `${currentDog.description}`;
@@ -105,6 +105,46 @@ export default function dogDetails(dogs) {
 			dogDetailsSoundButton
 		)
 
+		dogDetailsPetInfoBreed.append(
+			dogDetailsPetInfoBreedElement,
+			dogDetailsPetInfoBreedSpan
+		)
+
+		dogDetailsPetInfoSex.append(
+			dogDetailsPetInfoSexElement,
+			dogDetailsPetInfoSexSpan
+		)
+
+		dogDetailsPetInfoAge.append(
+			dogDetailsPetInfoAgeElement,
+			dogDetailsPetInfoAgeSpan
+		)
+
+		dogDetailsPetInfoSize.append(
+			dogDetailsPetInfoSizeElement,
+			dogDetailsPetInfoSizeSpan
+		)
+
+		dogDetailsPetInfoLiveWithDogs.append(
+			dogDetailsPetInfoLiveWithDogsElement,
+			dogDetailsPetInfoLiveWithDogsSpan
+		)
+
+		dogDetailsPetInfoLiveWithCats.append(
+			dogDetailsPetInfoLiveWithCatsElement,
+			dogDetailsPetInfoLiveWithCatsSpan
+		)
+
+		dogDetailsPetInfoLiveWithChildren.append(
+			dogDetailsPetInfoLiveWithChildrenElement,
+			dogDetailsPetInfoLiveWithChildrenSpan
+		)
+
+		dogDetailsPetInfoIdealHome.append(
+			dogDetailsPetInfoIdealHomeElement,
+			dogDetailsPetInfoIdealHomeSpan
+		)
+
 		dogDetailsPetInfo.append(
 			dogDetailsPetInfoBreed,
 			dogDetailsPetInfoSex,
@@ -112,7 +152,8 @@ export default function dogDetails(dogs) {
 			dogDetailsPetInfoSize,
 			dogDetailsPetInfoLiveWithDogs,
 			dogDetailsPetInfoLiveWithCats,
-			dogDetailsPetInfoLiveWithChildren
+			dogDetailsPetInfoLiveWithChildren,
+			dogDetailsPetInfoIdealHome
 		)
 
 		dogDetailsPetInfoAndDescription.append(
@@ -120,7 +161,6 @@ export default function dogDetails(dogs) {
 			dogDetailsSubName,
 			dogDetailsPetDescription
 		)
-
 	
 		dogDetailsCard.append(
 			dogDetailsName,
@@ -129,7 +169,5 @@ export default function dogDetails(dogs) {
 		)
 		
 		dogDetailsContainer.appendChild(dogDetailsCard)
-
-
 	}
 }
