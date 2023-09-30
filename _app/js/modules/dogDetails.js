@@ -99,75 +99,77 @@ export default function dogDetails(dogs) {
 		dogDetailsSubName.innerText = `More about ${currentDog.name}`;
 		dogDetailsPetDescription.innerText = `${currentDog.description}`;
 
-		// Append elements
-		dogDetailsImageAndSoundContainer.append(
-			dogDetailsImage,
-			dogDetailsSoundButton
-		)
+		// Append elements if type of animal is dog
+		if (currentDog._type === 'dog') {
+			dogDetailsImageAndSoundContainer.append(
+				dogDetailsImage,
+				dogDetailsSoundButton
+			)
 
-		dogDetailsPetInfoBreed.append(
-			dogDetailsPetInfoBreedElement,
-			dogDetailsPetInfoBreedSpan
-		)
+			dogDetailsPetInfoBreed.append(
+				dogDetailsPetInfoBreedElement,
+				dogDetailsPetInfoBreedSpan
+			)
 
-		dogDetailsPetInfoSex.append(
-			dogDetailsPetInfoSexElement,
-			dogDetailsPetInfoSexSpan
-		)
+			dogDetailsPetInfoSex.append(
+				dogDetailsPetInfoSexElement,
+				dogDetailsPetInfoSexSpan
+			)
 
-		dogDetailsPetInfoAge.append(
-			dogDetailsPetInfoAgeElement,
-			dogDetailsPetInfoAgeSpan
-		)
+			dogDetailsPetInfoAge.append(
+				dogDetailsPetInfoAgeElement,
+				dogDetailsPetInfoAgeSpan
+			)
 
-		dogDetailsPetInfoSize.append(
-			dogDetailsPetInfoSizeElement,
-			dogDetailsPetInfoSizeSpan
-		)
+			dogDetailsPetInfoSize.append(
+				dogDetailsPetInfoSizeElement,
+				dogDetailsPetInfoSizeSpan
+			)
 
-		dogDetailsPetInfoLiveWithDogs.append(
-			dogDetailsPetInfoLiveWithDogsElement,
-			dogDetailsPetInfoLiveWithDogsSpan
-		)
+			dogDetailsPetInfoLiveWithDogs.append(
+				dogDetailsPetInfoLiveWithDogsElement,
+				dogDetailsPetInfoLiveWithDogsSpan
+			)
 
-		dogDetailsPetInfoLiveWithCats.append(
-			dogDetailsPetInfoLiveWithCatsElement,
-			dogDetailsPetInfoLiveWithCatsSpan
-		)
+			dogDetailsPetInfoLiveWithCats.append(
+				dogDetailsPetInfoLiveWithCatsElement,
+				dogDetailsPetInfoLiveWithCatsSpan
+			)
 
-		dogDetailsPetInfoLiveWithChildren.append(
-			dogDetailsPetInfoLiveWithChildrenElement,
-			dogDetailsPetInfoLiveWithChildrenSpan
-		)
+			dogDetailsPetInfoLiveWithChildren.append(
+				dogDetailsPetInfoLiveWithChildrenElement,
+				dogDetailsPetInfoLiveWithChildrenSpan
+			)
 
-		dogDetailsPetInfoIdealHome.append(
-			dogDetailsPetInfoIdealHomeElement,
-			dogDetailsPetInfoIdealHomeSpan
-		)
+			dogDetailsPetInfoIdealHome.append(
+				dogDetailsPetInfoIdealHomeElement,
+				dogDetailsPetInfoIdealHomeSpan
+			)
 
-		dogDetailsPetInfo.append(
-			dogDetailsPetInfoBreed,
-			dogDetailsPetInfoSex,
-			dogDetailsPetInfoAge,
-			dogDetailsPetInfoSize,
-			dogDetailsPetInfoLiveWithDogs,
-			dogDetailsPetInfoLiveWithCats,
-			dogDetailsPetInfoLiveWithChildren,
-			dogDetailsPetInfoIdealHome
-		)
+			dogDetailsPetInfo.append(
+				dogDetailsPetInfoBreed,
+				dogDetailsPetInfoSex,
+				dogDetailsPetInfoAge,
+				dogDetailsPetInfoSize,
+				dogDetailsPetInfoLiveWithDogs,
+				dogDetailsPetInfoLiveWithCats,
+				dogDetailsPetInfoLiveWithChildren,
+				dogDetailsPetInfoIdealHome
+			)
 
-		dogDetailsPetInfoAndDescription.append(
-			dogDetailsPetInfo,
-			dogDetailsSubName,
-			dogDetailsPetDescription
-		)
-	
-		dogDetailsCard.append(
-			dogDetailsName,
-			dogDetailsImageAndSoundContainer,
-			dogDetailsPetInfoAndDescription
-		)
+			dogDetailsPetInfoAndDescription.append(
+				dogDetailsPetInfo,
+				dogDetailsSubName,
+				dogDetailsPetDescription
+			)
 		
-		dogDetailsContainer.appendChild(dogDetailsCard)
+			dogDetailsCard.append(
+				dogDetailsName,
+				dogDetailsImageAndSoundContainer,
+				dogDetailsPetInfoAndDescription
+			)
+			
+			dogDetailsContainer.appendChild(dogDetailsCard)
+		}
 	}
 }
