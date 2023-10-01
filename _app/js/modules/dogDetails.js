@@ -141,6 +141,7 @@ export default function dogDetails(dogs) {
 				dogDetailsPetInfoSizeSpan
 			)
 
+			// If statement to append different details for each animal type
 			if (currentDog._type === 'dog' || currentDog._type === 'cat') {
 				dogDetailsPetInfoLiveWithDogs.append(
 					dogDetailsPetInfoLiveWithDogsElement,
@@ -151,7 +152,7 @@ export default function dogDetails(dogs) {
 					dogDetailsPetInfoLiveWithCatsElement,
 					dogDetailsPetInfoLiveWithCatsSpan
 				)
-			} else if (currentDog.type === 'bird') {
+			} else if (currentDog._type === 'bird') {
 				dogDetailsPetInfoLiveWithBirds.append(
 					dogDetailsPetInfoLiveWithBirdsElement,
 					dogDetailsPetInfoLiveWithBirdsSpan
@@ -168,16 +169,28 @@ export default function dogDetails(dogs) {
 				dogDetailsPetInfoIdealHomeSpan
 			)
 
-			dogDetailsPetInfo.append(
-				dogDetailsPetInfoBreed,
-				dogDetailsPetInfoSex,
-				dogDetailsPetInfoAge,
-				dogDetailsPetInfoSize,
-				dogDetailsPetInfoLiveWithDogs,
-				dogDetailsPetInfoLiveWithCats,
-				dogDetailsPetInfoLiveWithChildren,
-				dogDetailsPetInfoIdealHome
-			)
+			if (currentDog._type === 'dog' || currentDog._type === 'cat') {
+				dogDetailsPetInfo.append(
+					dogDetailsPetInfoBreed,
+					dogDetailsPetInfoSex,
+					dogDetailsPetInfoAge,
+					dogDetailsPetInfoSize,
+					dogDetailsPetInfoLiveWithDogs,
+					dogDetailsPetInfoLiveWithCats,
+					dogDetailsPetInfoLiveWithChildren,
+					dogDetailsPetInfoIdealHome
+				)
+			} else if (currentDog._type === 'bird') {
+				dogDetailsPetInfo.append(
+					dogDetailsPetInfoBreed,
+					dogDetailsPetInfoSex,
+					dogDetailsPetInfoAge,
+					dogDetailsPetInfoSize,
+					dogDetailsPetInfoLiveWithBirds,
+					dogDetailsPetInfoLiveWithChildren,
+					dogDetailsPetInfoIdealHome
+				)
+			}
 
 			dogDetailsPetInfoAndDescription.append(
 				dogDetailsPetInfo,
