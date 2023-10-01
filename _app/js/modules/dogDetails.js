@@ -79,7 +79,12 @@ export default function dogDetails(dogs) {
 		dogDetailsName.innerText = `${currentDog.name}`;
 		dogDetailsImage.setAttribute('src', currentDog.portrait);
 		dogDetailsImage.setAttribute('alt', currentDog.alternative);
-		dogDetailsSoundButton.innerText = "Hear me woof!";
+		
+		if (currentDog._type === 'dog') {
+			dogDetailsSoundButton.innerText = "Hear me woof!";
+	 	} else if (currentDog._type === 'cat') {
+			dogDetailsSoundButton.innerText = "Hear me meow!";
+		}
 		dogDetailsPetInfoBreedElement.innerText = "Breed: ";
 		dogDetailsPetInfoBreedSpan.innerText = `${currentDog.breed}`;
 		dogDetailsPetInfoSexElement.innerText = "Sex: ";
@@ -100,7 +105,7 @@ export default function dogDetails(dogs) {
 		dogDetailsPetDescription.innerText = `${currentDog.description}`;
 
 		// Append elements if type of animal is dog
-		if (currentDog._type === 'dog') {
+		if (currentDog._type === 'dog' || currentDog._type === 'cat') {
 			dogDetailsImageAndSoundContainer.append(
 				dogDetailsImage,
 				dogDetailsSoundButton
