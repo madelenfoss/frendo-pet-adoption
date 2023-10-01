@@ -74,6 +74,7 @@ export default function dogDetails(dogs) {
 		dogDetailsPetInfoSize.classList.add('pet-info__size');
 		dogDetailsPetInfoLiveWithDogs.classList.add('pet-info__live-with-dogs');
 		dogDetailsPetInfoLiveWithCats.classList.add('pet-info__live-with-cats');
+		dogDetailsPetInfoLiveWithBirds.classList.add('pet-info__live-with-birds');
 		dogDetailsPetInfoLiveWithChildren.classList.add('pet-info__live-with-children');
 		dogDetailsPetInfoIdealHome.classList.add('pet-info__ideal-home');
 		dogDetailsSubName.classList.add('pet-info__about');
