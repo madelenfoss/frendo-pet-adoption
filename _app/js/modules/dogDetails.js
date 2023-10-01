@@ -45,6 +45,10 @@ export default function dogDetails(dogs) {
 		const dogDetailsPetInfoLiveWithCatsElement = document.createElement('b');
 		const dogDetailsPetInfoLiveWithCatsSpan = document.createElement('span');
 
+		const dogDetailsPetInfoLiveWithBirds = document.createElement('li');
+		const dogDetailsPetInfoLiveWithBirdsElement = document.createElement('b');
+		const dogDetailsPetInfoLiveWithBirdsSpan = document.createElement('span');
+
 		const dogDetailsPetInfoLiveWithChildren = document.createElement('li');
 		const dogDetailsPetInfoLiveWithChildrenElement = document.createElement('b');
 		const dogDetailsPetInfoLiveWithChildrenSpan = document.createElement('span');
@@ -79,12 +83,15 @@ export default function dogDetails(dogs) {
 		dogDetailsName.innerText = `${currentDog.name}`;
 		dogDetailsImage.setAttribute('src', currentDog.portrait);
 		dogDetailsImage.setAttribute('alt', currentDog.alternative);
-		
+
 		if (currentDog._type === 'dog') {
 			dogDetailsSoundButton.innerText = "Hear me woof!";
 	 	} else if (currentDog._type === 'cat') {
 			dogDetailsSoundButton.innerText = "Hear me meow!";
+		} else if (currentDog._type === 'bird') {
+			dogDetailsSoundButton.innerText = "Hear me chirp!";
 		}
+
 		dogDetailsPetInfoBreedElement.innerText = "Breed: ";
 		dogDetailsPetInfoBreedSpan.innerText = `${currentDog.breed}`;
 		dogDetailsPetInfoSexElement.innerText = "Sex: ";
@@ -97,6 +104,8 @@ export default function dogDetails(dogs) {
 		dogDetailsPetInfoLiveWithDogsSpan.innerText = `${currentDog.liveWithDogs}`;
 		dogDetailsPetInfoLiveWithCatsElement.innerText = "Living with cats: ";
 		dogDetailsPetInfoLiveWithCatsSpan.innerText = `${currentDog.liveWithCats}`;
+		dogDetailsPetInfoLiveWithBirdsElement.innerText = "Living with other birds: ";
+		dogDetailsPetInfoLiveWithBirdsSpan.innerText = `${currentDog.liveWithBirds}`;
 		dogDetailsPetInfoLiveWithChildrenElement.innerText = "Living with children: ";
 		dogDetailsPetInfoLiveWithChildrenSpan.innerText = `${currentDog.liveWithChildren}`;
 		dogDetailsPetInfoIdealHomeElement.innerText = "Ideal home location: ";
@@ -105,7 +114,7 @@ export default function dogDetails(dogs) {
 		dogDetailsPetDescription.innerText = `${currentDog.description}`;
 
 		// Append elements if type of animal is dog
-		if (currentDog._type === 'dog' || currentDog._type === 'cat') {
+		if (currentDog._type === 'dog' || currentDog._type === 'cat' || currentDog._type === 'bird') {
 			dogDetailsImageAndSoundContainer.append(
 				dogDetailsImage,
 				dogDetailsSoundButton
@@ -131,15 +140,22 @@ export default function dogDetails(dogs) {
 				dogDetailsPetInfoSizeSpan
 			)
 
-			dogDetailsPetInfoLiveWithDogs.append(
-				dogDetailsPetInfoLiveWithDogsElement,
-				dogDetailsPetInfoLiveWithDogsSpan
-			)
+			if (currentDog._type === 'dog' || currentDog._type === 'cat') {
+				dogDetailsPetInfoLiveWithDogs.append(
+					dogDetailsPetInfoLiveWithDogsElement,
+					dogDetailsPetInfoLiveWithDogsSpan
+				)
 
-			dogDetailsPetInfoLiveWithCats.append(
-				dogDetailsPetInfoLiveWithCatsElement,
-				dogDetailsPetInfoLiveWithCatsSpan
-			)
+				dogDetailsPetInfoLiveWithCats.append(
+					dogDetailsPetInfoLiveWithCatsElement,
+					dogDetailsPetInfoLiveWithCatsSpan
+				)
+			} else if (currentDog.type === 'bird') {
+				dogDetailsPetInfoLiveWithBirds.append(
+					dogDetailsPetInfoLiveWithBirdsElement,
+					dogDetailsPetInfoLiveWithBirdsSpan
+				)
+			}
 
 			dogDetailsPetInfoLiveWithChildren.append(
 				dogDetailsPetInfoLiveWithChildrenElement,
