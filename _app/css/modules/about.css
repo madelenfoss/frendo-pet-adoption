@@ -21,24 +21,15 @@
 	box-shadow: 0 5px 10px var(--tertiary);
 }
 
-@media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
 	.about__image {
 		width: 95%;
+		min-width: 10rem;
 		border-radius: 5px;
 	}
 
 	.about__p {
-		width: 95%;
-		padding: 1rem 1.5rem;
-	}
- }
-
- @media screen and (max-width: 768px) {
-	.about__image {
-		min-width: 10rem;
-	}
-
-	.about__p {
 		width: 100%;
+		padding: 1rem 1.5rem;
 	}
  }
