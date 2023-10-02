@@ -20,7 +20,7 @@ export default {
 		},
 		{
 			title: 'Type of animal',
-			name: 'animalType',
+			name: 'breed',
 			type: 'string',
 			validation: rule => rule.required()
 		},
