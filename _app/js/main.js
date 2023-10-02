@@ -6,8 +6,7 @@ import renderCatData from "./modules/renderCatData.js";
 import renderBirdData from "./modules/renderBirdData.js";
 import renderBunnyData from "./modules/renderBunnyData.js";
 import renderOtherPetData from "./modules/renderOtherPetData.js";
-import dogDetails from "./modules/dogDetails.js";
-import catDetails from "./modules/catDetails.js";
+import petDetails from "./modules/petDetails.js";
 
 const fetchedData = await fetchAllData();
 
@@ -18,5 +17,4 @@ renderCatData(fetchedData);
 renderBirdData(fetchedData);
 renderBunnyData(fetchedData);
 renderOtherPetData(fetchedData);
-dogDetails(fetchedData);
-catDetails(fetchedData);
+petDetails(fetchedData);
