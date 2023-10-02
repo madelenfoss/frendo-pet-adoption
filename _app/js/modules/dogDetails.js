@@ -107,6 +107,8 @@ export default function dogDetails(dogs) {
 		dogDetailsPetInfoLiveWithCatsSpan.innerText = `${currentDog.liveWithCats}`;
 		dogDetailsPetInfoLiveWithBirdsElement.innerText = "Living with other birds: ";
 		dogDetailsPetInfoLiveWithBirdsSpan.innerText = `${currentDog.liveWithBirds}`;
+		dogDetailsPetInfoLiveWithBunniessElement.innerText = "Living with other bunnies: ";
+		dogDetailsPetInfoLiveWithBunniessSpan.innerText = `${currentDog.liveWithBunnies}`;
 		dogDetailsPetInfoLiveWithChildrenElement.innerText = "Living with children: ";
 		dogDetailsPetInfoLiveWithChildrenSpan.innerText = `${currentDog.liveWithChildren}`;
 		dogDetailsPetInfoIdealHomeElement.innerText = "Ideal home location: ";
@@ -115,7 +117,7 @@ export default function dogDetails(dogs) {
 		dogDetailsPetDescription.innerText = `${currentDog.description}`;
 
 		// Append elements if type of animal is dog
-		if (currentDog._type === 'dog' || currentDog._type === 'cat' || currentDog._type === 'bird') {
+		if (currentDog._type === 'dog' || currentDog._type === 'cat' || currentDog._type === 'bird' || currentDog._type === 'bird' ) {
 			dogDetailsImageAndSoundContainer.append(
 				dogDetailsImage,
 				dogDetailsSoundButton
@@ -157,6 +159,11 @@ export default function dogDetails(dogs) {
 					dogDetailsPetInfoLiveWithBirdsElement,
 					dogDetailsPetInfoLiveWithBirdsSpan
 				)
+			} else if (currentDog._type === 'bunny') {
+				dogDetailsPetInfoLiveWithBirds.append(
+					dogDetailsPetInfoLiveWithBunniessElement,
+					dogDetailsPetInfoLiveWithBunniessSpan
+				)
 			}
 
 			dogDetailsPetInfoLiveWithChildren.append(
@@ -187,6 +194,16 @@ export default function dogDetails(dogs) {
 					dogDetailsPetInfoAge,
 					dogDetailsPetInfoSize,
 					dogDetailsPetInfoLiveWithBirds,
+					dogDetailsPetInfoLiveWithChildren,
+					dogDetailsPetInfoIdealHome
+				)
+			} else if (currentDog._type === 'bunny') {
+				dogDetailsPetInfo.append(
+					dogDetailsPetInfoBreed,
+					dogDetailsPetInfoSex,
+					dogDetailsPetInfoAge,
+					dogDetailsPetInfoSize,
+					dogDetailsPetInfoLiveWithBunnies,
 					dogDetailsPetInfoLiveWithChildren,
 					dogDetailsPetInfoIdealHome
 				)
