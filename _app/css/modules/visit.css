@@ -38,3 +38,16 @@
 	border-radius: 20px;
 	box-shadow: 0 5px 10px var(--tertiary);
 }
+
+@media screen and (max-width: 768px) {
+	.visit__container-image {
+		width: 95%;
+		min-width: 10rem;
+		border-radius: 5px;
+	}
+
+	.visit__container-paragraph {
+		width: 100%;
+		padding: 1rem 1.5rem;
+	}
+ }
