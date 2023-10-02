@@ -55,12 +55,12 @@
  @media screen and (max-width: 768px) {
 	.contact__image {
 		width: 95%;
+		min-width: 10rem;
 		border-radius: 5px;
 	}
 
 	.contact__p {
-		margin: 1rem;
-		width: 90%;
+		width: 100%;
 		padding: 1rem 1.5rem;
 	}
  }
