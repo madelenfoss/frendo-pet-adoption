@@ -9,7 +9,7 @@ export default function petDetails(pets) {
 	}
 
 	function renderPetHTML() {
-		// Finds the slug of the current dog
+		// Finds the slug of the current pet
 		const currentPet = pets.find(pet => pet.slug === slug);
 
 		// Create elements
@@ -96,7 +96,7 @@ export default function petDetails(pets) {
 			petDetailsSoundButton.innerText = "Hear me meow!";
 		} else if (currentPet._type === 'bird') {
 			petDetailsSoundButton.innerText = "Hear me chirp!";
-		}
+		};
 
 		petDetailsInfoBreedElement.innerText = "Breed: ";
 		petDetailsInfoBreedSpan.innerText = `${currentPet.breed}`;
@@ -132,7 +132,7 @@ export default function petDetails(pets) {
 			petDetailsImageAndSoundContainer.append(
 				petDetailsImage
 			)
-		}
+		};
 
 		petDetailsInfoBreed.append(
 			petDetailsInfoBreedElement,
@@ -175,7 +175,7 @@ export default function petDetails(pets) {
 			petDetailsInfoLiveWithBunniesElement,
 			petDetailsInfoLiveWithBunniesSpan
 			)
-		}
+		};
 
 		petDetailsInfoLiveWithChildren.append(
 			petDetailsInfoLiveWithChildrenElement,
@@ -218,7 +218,7 @@ export default function petDetails(pets) {
 				petDetailsInfoLiveWithChildren,
 				petDetailsInfoIdealHome
 			)
-		}
+		};
 
 		petDetailsInfoAndDescription.append(
 			petDetailsInfo,
