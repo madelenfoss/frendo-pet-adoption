@@ -19,11 +19,6 @@ export default {
 			validation: rule => rule.required()
 		},
 		{
-			title: 'Visible on page',
-			name: 'visibleDog',
-			type: 'boolean'
-		},
-		{
 			title: 'Breed',
 			name: 'breed',
 			type: 'string',
