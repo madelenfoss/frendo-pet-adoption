@@ -49,6 +49,10 @@ export default function dogDetails(dogs) {
 		const dogDetailsPetInfoLiveWithBirdsElement = document.createElement('b');
 		const dogDetailsPetInfoLiveWithBirdsSpan = document.createElement('span');
 
+		const dogDetailsPetInfoLiveWithBunnies = document.createElement('li');
+		const dogDetailsPetInfoLiveWithBunniesElement = document.createElement('b');
+		const dogDetailsPetInfoLiveWithBunniesSpan = document.createElement('span');
+
 		const dogDetailsPetInfoLiveWithChildren = document.createElement('li');
 		const dogDetailsPetInfoLiveWithChildrenElement = document.createElement('b');
 		const dogDetailsPetInfoLiveWithChildrenSpan = document.createElement('span');
@@ -75,6 +79,7 @@ export default function dogDetails(dogs) {
 		dogDetailsPetInfoLiveWithDogs.classList.add('pet-info__live-with-dogs');
 		dogDetailsPetInfoLiveWithCats.classList.add('pet-info__live-with-cats');
 		dogDetailsPetInfoLiveWithBirds.classList.add('pet-info__live-with-birds');
+		dogDetailsPetInfoLiveWithBunnies.classList.add('pet-info__live-with-bunnies');
 		dogDetailsPetInfoLiveWithChildren.classList.add('pet-info__live-with-children');
 		dogDetailsPetInfoIdealHome.classList.add('pet-info__ideal-home');
 		dogDetailsSubName.classList.add('pet-info__about');
@@ -107,8 +112,8 @@ export default function dogDetails(dogs) {
 		dogDetailsPetInfoLiveWithCatsSpan.innerText = `${currentDog.liveWithCats}`;
 		dogDetailsPetInfoLiveWithBirdsElement.innerText = "Living with other birds: ";
 		dogDetailsPetInfoLiveWithBirdsSpan.innerText = `${currentDog.liveWithBirds}`;
-		dogDetailsPetInfoLiveWithBunniessElement.innerText = "Living with other bunnies: ";
-		dogDetailsPetInfoLiveWithBunniessSpan.innerText = `${currentDog.liveWithBunnies}`;
+		dogDetailsPetInfoLiveWithBunniesElement.innerText = "Living with other bunnies: ";
+		dogDetailsPetInfoLiveWithBunniesSpan.innerText = `${currentDog.liveWithBunnies}`;
 		dogDetailsPetInfoLiveWithChildrenElement.innerText = "Living with children: ";
 		dogDetailsPetInfoLiveWithChildrenSpan.innerText = `${currentDog.liveWithChildren}`;
 		dogDetailsPetInfoIdealHomeElement.innerText = "Ideal home location: ";
@@ -116,112 +121,117 @@ export default function dogDetails(dogs) {
 		dogDetailsSubName.innerText = `More about ${currentDog.name}`;
 		dogDetailsPetDescription.innerText = `${currentDog.description}`;
 
-		// Append elements if type of animal is dog
-		if (currentDog._type === 'dog' || currentDog._type === 'cat' || currentDog._type === 'bird' || currentDog._type === 'bird' ) {
+	
+		// Appending the sound button for dogs, cats and birds only
+		if (currentDog._type === 'dog' || currentDog._type === 'cat' || currentDog._type === 'bird') {
 			dogDetailsImageAndSoundContainer.append(
 				dogDetailsImage,
 				dogDetailsSoundButton
 			)
-
-			dogDetailsPetInfoBreed.append(
-				dogDetailsPetInfoBreedElement,
-				dogDetailsPetInfoBreedSpan
+		} else {
+			dogDetailsImageAndSoundContainer.append(
+				dogDetailsImage
 			)
-
-			dogDetailsPetInfoSex.append(
-				dogDetailsPetInfoSexElement,
-				dogDetailsPetInfoSexSpan
-			)
-
-			dogDetailsPetInfoAge.append(
-				dogDetailsPetInfoAgeElement,
-				dogDetailsPetInfoAgeSpan
-			)
-
-			dogDetailsPetInfoSize.append(
-				dogDetailsPetInfoSizeElement,
-				dogDetailsPetInfoSizeSpan
-			)
-
-			// If statement to append different details for each animal type
-			if (currentDog._type === 'dog' || currentDog._type === 'cat') {
-				dogDetailsPetInfoLiveWithDogs.append(
-					dogDetailsPetInfoLiveWithDogsElement,
-					dogDetailsPetInfoLiveWithDogsSpan
-				)
-
-				dogDetailsPetInfoLiveWithCats.append(
-					dogDetailsPetInfoLiveWithCatsElement,
-					dogDetailsPetInfoLiveWithCatsSpan
-				)
-			} else if (currentDog._type === 'bird') {
-				dogDetailsPetInfoLiveWithBirds.append(
-					dogDetailsPetInfoLiveWithBirdsElement,
-					dogDetailsPetInfoLiveWithBirdsSpan
-				)
-			} else if (currentDog._type === 'bunny') {
-				dogDetailsPetInfoLiveWithBirds.append(
-					dogDetailsPetInfoLiveWithBunniessElement,
-					dogDetailsPetInfoLiveWithBunniessSpan
-				)
-			}
-
-			dogDetailsPetInfoLiveWithChildren.append(
-				dogDetailsPetInfoLiveWithChildrenElement,
-				dogDetailsPetInfoLiveWithChildrenSpan
-			)
-
-			dogDetailsPetInfoIdealHome.append(
-				dogDetailsPetInfoIdealHomeElement,
-				dogDetailsPetInfoIdealHomeSpan
-			)
-
-			if (currentDog._type === 'dog' || currentDog._type === 'cat') {
-				dogDetailsPetInfo.append(
-					dogDetailsPetInfoBreed,
-					dogDetailsPetInfoSex,
-					dogDetailsPetInfoAge,
-					dogDetailsPetInfoSize,
-					dogDetailsPetInfoLiveWithDogs,
-					dogDetailsPetInfoLiveWithCats,
-					dogDetailsPetInfoLiveWithChildren,
-					dogDetailsPetInfoIdealHome
-				)
-			} else if (currentDog._type === 'bird') {
-				dogDetailsPetInfo.append(
-					dogDetailsPetInfoBreed,
-					dogDetailsPetInfoSex,
-					dogDetailsPetInfoAge,
-					dogDetailsPetInfoSize,
-					dogDetailsPetInfoLiveWithBirds,
-					dogDetailsPetInfoLiveWithChildren,
-					dogDetailsPetInfoIdealHome
-				)
-			} else if (currentDog._type === 'bunny') {
-				dogDetailsPetInfo.append(
-					dogDetailsPetInfoBreed,
-					dogDetailsPetInfoSex,
-					dogDetailsPetInfoAge,
-					dogDetailsPetInfoSize,
-					dogDetailsPetInfoLiveWithBunnies,
-					dogDetailsPetInfoLiveWithChildren,
-					dogDetailsPetInfoIdealHome
-				)
-			}
-
-			dogDetailsPetInfoAndDescription.append(
-				dogDetailsPetInfo,
-				dogDetailsSubName,
-				dogDetailsPetDescription
-			)
-		
-			dogDetailsCard.append(
-				dogDetailsName,
-				dogDetailsImageAndSoundContainer,
-				dogDetailsPetInfoAndDescription
-			)
-			
-			dogDetailsContainer.appendChild(dogDetailsCard)
 		}
+
+		dogDetailsPetInfoBreed.append(
+			dogDetailsPetInfoBreedElement,
+			dogDetailsPetInfoBreedSpan
+		)
+
+		dogDetailsPetInfoSex.append(
+			dogDetailsPetInfoSexElement,
+			dogDetailsPetInfoSexSpan
+		)
+
+		dogDetailsPetInfoAge.append(
+			dogDetailsPetInfoAgeElement,
+			dogDetailsPetInfoAgeSpan
+		)
+
+		dogDetailsPetInfoSize.append(
+			dogDetailsPetInfoSizeElement,
+			dogDetailsPetInfoSizeSpan
+		)
+
+		// If statement to append different details for each animal type
+		if (currentDog._type === 'dog' || currentDog._type === 'cat') {
+			dogDetailsPetInfoLiveWithDogs.append(
+				dogDetailsPetInfoLiveWithDogsElement,
+				dogDetailsPetInfoLiveWithDogsSpan
+			)
+
+			dogDetailsPetInfoLiveWithCats.append(
+				dogDetailsPetInfoLiveWithCatsElement,
+				dogDetailsPetInfoLiveWithCatsSpan
+			)
+		} else if (currentDog._type === 'bird') {
+			dogDetailsPetInfoLiveWithBirds.append(
+				dogDetailsPetInfoLiveWithBirdsElement,
+				dogDetailsPetInfoLiveWithBirdsSpan
+			)
+		} else if (currentDog._type === 'bunny') {
+			dogDetailsPetInfoLiveWithBunnies.append(
+			dogDetailsPetInfoLiveWithBunniesElement,
+			dogDetailsPetInfoLiveWithBunniesSpan
+			)
+		}
+
+		dogDetailsPetInfoLiveWithChildren.append(
+			dogDetailsPetInfoLiveWithChildrenElement,
+			dogDetailsPetInfoLiveWithChildrenSpan
+		)
+
+		dogDetailsPetInfoIdealHome.append(
+			dogDetailsPetInfoIdealHomeElement,
+			dogDetailsPetInfoIdealHomeSpan
+		)
+
+		if (currentDog._type === 'dog' || currentDog._type === 'cat') {
+			dogDetailsPetInfo.append(
+				dogDetailsPetInfoBreed,
+				dogDetailsPetInfoSex,
+				dogDetailsPetInfoAge,
+				dogDetailsPetInfoSize,
+				dogDetailsPetInfoLiveWithDogs,
+				dogDetailsPetInfoLiveWithCats,
+				dogDetailsPetInfoLiveWithChildren,
+				dogDetailsPetInfoIdealHome
+			)
+		} else if (currentDog._type === 'bird') {
+			dogDetailsPetInfo.append(
+				dogDetailsPetInfoBreed,
+				dogDetailsPetInfoSex,
+				dogDetailsPetInfoAge,
+				dogDetailsPetInfoSize,
+				dogDetailsPetInfoLiveWithBirds,
+				dogDetailsPetInfoLiveWithChildren,
+				dogDetailsPetInfoIdealHome
+			)
+		} else if (currentDog._type === 'bunny') {
+			dogDetailsPetInfo.append(
+				dogDetailsPetInfoBreed,
+				dogDetailsPetInfoSex,
+				dogDetailsPetInfoAge,
+				dogDetailsPetInfoSize,
+				dogDetailsPetInfoLiveWithBunnies,
+				dogDetailsPetInfoLiveWithChildren,
+				dogDetailsPetInfoIdealHome
+			)
+		}
+
+		dogDetailsPetInfoAndDescription.append(
+			dogDetailsPetInfo,
+			dogDetailsSubName,
+			dogDetailsPetDescription
+		)
+	
+		dogDetailsCard.append(
+			dogDetailsName,
+			dogDetailsImageAndSoundContainer,
+			dogDetailsPetInfoAndDescription
+		)
+		
+		dogDetailsContainer.appendChild(dogDetailsCard)
 	}
 }
