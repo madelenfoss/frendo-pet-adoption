@@ -121,29 +121,28 @@ export default function petDetails(pets) {
 		petDetailsSubName.innerText = `More about ${currentPet.name}`;
 		petDetailsDescription.innerText = `${currentPet.description}`;
 
-	
+		// Create and add event listener for sound button
+		const petSoundButton = new Audio();
+		
+		if (currentPet._type === 'dog') {
+			petSoundButton.src = currentPet.dogSound;
+		} else if (currentPet._type === 'cat') {
+			petSoundButton.src = currentPet.catSound;
+		} else if (currentPet._type === 'bird') {
+			petSoundButton.src = currentPet.birdSound;
+		}
+
+		petDetailsSoundButton.addEventListener('click', () => {
+		petSoundButton.play();
+		});
+
+
 		// Appending the sound button for dogs, cats and birds only
 		if (currentPet._type === 'dog' || currentPet._type === 'cat' || currentPet._type === 'bird') {
 			petDetailsImageAndSoundContainer.append(
 				petDetailsImage,
 				petDetailsSoundButton
 			)
-
-			// Create and add event listener for sound button
-			const petSoundButton = new Audio();
-
-			if (currentPet._type === 'dog') {
-			petSoundButton.src = currentPet.dogSound;
-			} else if (currentPet._type === 'cat') {
-			petSoundButton.src = currentPet.catSound;
-			} else if (currentPet._type === 'bird') {
-			petSoundButton.src = currentPet.birdSound;
-			}
-
-			petDetailsSoundButton.addEventListener('click', () => {
-			petSoundButton.play();
-			});
-
 		} else {
 			petDetailsImageAndSoundContainer.append(
 				petDetailsImage
