@@ -234,4 +234,42 @@ export default function petDetails(pets) {
 		
 		petDetailsContainer.appendChild(petDetailsCard)
 	}
+
+	function soundButton(pets) {
+		for (const pet of pets) {
+			const dogSoundButton = new Audio(`${currentPet.dogSound}`);
+			const catSoundButton = new Audio(`${currentPet.catSound}`);
+			const birdSoundButton = new Audio(`${currentPet.birdSound}`);
+
+			dogSoundButton.addEventListener('click', handleDogSoundButtonClick);
+			catSoundButton.addEventListener('click', handleCatSoundButtonClick);
+			birdSoundButton.addEventListener('click', handleBirdSoundButtonClick);
+
+			function handleDogSoundButtonClick(event) {
+				playDogSound();
+			};
+
+			function handleCatSoundButtonClick(event) {
+				playCatSound();
+			};
+
+			function handleBirdSoundButtonClick(event) {
+				playBirdSound();
+			};
+
+			function playDogSound() {
+				dogSoundButton.play()
+			};
+
+			function playCatSound() {
+				catSoundButton.play()
+			};
+
+			function playBirdSound() {
+				birdSoundButton.play()
+			};
+		}
+	}
+
+	soundButton();
 }
