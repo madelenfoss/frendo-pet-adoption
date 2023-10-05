@@ -13,6 +13,7 @@ export default function petDetails(pets) {
 		const currentPet = pets.find(pet => pet.slug === slug);
 
 		// Create elements
+		const backToPreviousPage = document.createElement('a');
 		const petDetailsCard = document.createElement('div');
 		const petDetailsName = document.createElement('h1');
 		const petDetailsImageAndSoundContainer = document.createElement('div');
@@ -65,6 +66,7 @@ export default function petDetails(pets) {
 		const petDetailsDescription = document.createElement('p');
 
 		// Add classlist names
+		backToPreviousPage.classList.add('pet-info__back');
 		petDetailsCard.classList.add('pet-info__card');
 		petDetailsName.classList.add('pet-info__name');
 		petDetailsImageAndSoundContainer.classList.add('pet-info__image-and-sound');
@@ -86,6 +88,10 @@ export default function petDetails(pets) {
 		petDetailsDescription.classList.add('pet-info__description');
 
 		// Add attributes and inner text
+		if (currentPet._type === 'dog') {
+			backToPreviousPage.setAttribute('href', )
+		}
+
 		petDetailsName.innerText = `${currentPet.name}`;
 		petDetailsImage.setAttribute('src', currentPet.portrait);
 		petDetailsImage.setAttribute('alt', currentPet.alternative);
