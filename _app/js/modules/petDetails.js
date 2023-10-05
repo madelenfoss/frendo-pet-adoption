@@ -87,9 +87,22 @@ export default function petDetails(pets) {
 		petDetailsSubName.classList.add('pet-info__about');
 		petDetailsDescription.classList.add('pet-info__description');
 
-		// Add attributes and inner text
+		// Add attributes and inner text based on pet type
 		if (currentPet._type === 'dog') {
-			backToPreviousPage.setAttribute('href', )
+			backToPreviousPage.setAttribute('href', '../dogs/');
+			backToPreviousPage.innerText = "Back to dogs";
+		} else if (currentPet._type === 'cat') {
+			backToPreviousPage.setAttribute('href', '../cats/');
+			backToPreviousPage.innerText = "Back to cats";
+		} else if (currentPet._type === 'bird') {
+			backToPreviousPage.setAttribute('href', '../birds/');
+			backToPreviousPage.innerText = "Back to birds";
+		} 	else if (currentPet._type === 'bunny') {
+			backToPreviousPage.setAttribute('href', '../bunnies/');
+			backToPreviousPage.innerText = "Back to bunnies";
+		}	else if (currentPet._type === 'other') {
+			backToPreviousPage.setAttribute('href', '../other/');
+			backToPreviousPage.innerText = "Back to other pets";
 		}
 
 		petDetailsName.innerText = `${currentPet.name}`;
