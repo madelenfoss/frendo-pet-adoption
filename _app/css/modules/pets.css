@@ -1,3 +1,20 @@
+.others,
+.dogs,
+.cats,
+.birds,
+.bunnies
+ {
+	position: relative;
+}
+
+.animal_previous {
+	position: absolute;
+	top: 5rem;
+	left: 5rem;
+	text-transform: uppercase;
+	color: var(--tertiary);
+}
+
 .animal__container {
 	display: grid;
 	margin: 0 auto 5rem auto;
