@@ -90,6 +90,7 @@ export default function petDetails(pets) {
 		petDetailsImage.setAttribute('src', currentPet.portrait);
 		petDetailsImage.setAttribute('alt', currentPet.alternative);
 
+		// Add different text to sound button based on what kind of animal they are
 		if (currentPet._type === 'dog') {
 			petDetailsSoundButton.innerText = "Hear me woof!";
 	 	} else if (currentPet._type === 'cat') {
@@ -123,7 +124,7 @@ export default function petDetails(pets) {
 
 		// Create and add event listener for sound button
 		const petSoundButton = new Audio();
-		
+
 		if (currentPet._type === 'dog') {
 			petSoundButton.src = currentPet.dogSound;
 		} else if (currentPet._type === 'cat') {
@@ -133,9 +134,8 @@ export default function petDetails(pets) {
 		}
 
 		petDetailsSoundButton.addEventListener('click', () => {
-		petSoundButton.play();
+			petSoundButton.play();
 		});
-
 
 		// Appending the sound button for dogs, cats and birds only
 		if (currentPet._type === 'dog' || currentPet._type === 'cat' || currentPet._type === 'bird') {
@@ -187,8 +187,8 @@ export default function petDetails(pets) {
 			)
 		} else if (currentPet._type === 'bunny') {
 			petDetailsInfoLiveWithBunnies.append(
-			petDetailsInfoLiveWithBunniesElement,
-			petDetailsInfoLiveWithBunniesSpan
+				petDetailsInfoLiveWithBunniesElement,
+				petDetailsInfoLiveWithBunniesSpan
 			)
 		};
 
@@ -249,42 +249,4 @@ export default function petDetails(pets) {
 		
 		petDetailsContainer.appendChild(petDetailsCard)
 	}
-
-	// function soundButton(pets) {
-	// 	for (const pet of pets) {
-	// 		const dogSoundButton = new Audio(`${currentPet.dogSound}`);
-	// 		const catSoundButton = new Audio(`${currentPet.catSound}`);
-	// 		const birdSoundButton = new Audio(`${currentPet.birdSound}`);
-
-	// 		dogSoundButton.addEventListener('click', handleDogSoundButtonClick);
-	// 		catSoundButton.addEventListener('click', handleCatSoundButtonClick);
-	// 		birdSoundButton.addEventListener('click', handleBirdSoundButtonClick);
-
-	// 		function handleDogSoundButtonClick(event) {
-	// 			playDogSound();
-	// 		};
-
-	// 		function handleCatSoundButtonClick(event) {
-	// 			playCatSound();
-	// 		};
-
-	// 		function handleBirdSoundButtonClick(event) {
-	// 			playBirdSound();
-	// 		};
-
-	// 		function playDogSound() {
-	// 			dogSoundButton.play()
-	// 		};
-
-	// 		function playCatSound() {
-	// 			catSoundButton.play()
-	// 		};
-
-	// 		function playBirdSound() {
-	// 			birdSoundButton.play()
-	// 		};
-	// 	}
-	// }
-
-	// soundButton();
 }
