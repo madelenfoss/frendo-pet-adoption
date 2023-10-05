@@ -266,6 +266,9 @@ export default function petDetails(pets) {
 			petDetailsInfoAndDescription
 		)
 		
-		petDetailsContainer.appendChild(petDetailsCard)
+		petDetailsContainer.append(
+			petDetailsCard,
+			backToPreviousPage
+			)
 	}
 }
