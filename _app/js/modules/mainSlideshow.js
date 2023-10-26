@@ -24,5 +24,8 @@ export default function mainSlideshow(slides) {
    function showFirstSlideWhenEnteringPage() {
       const slideshowSlides = document.querySelectorAll('.main__slideshow-slide');
       const buttonDots = document.querySelectorAll('.main__slideshow-dot');
+
+      slideshowSlides[0].classList.add('main__slideshow-slide--active');
+      buttonDots[0].classList.add('main__slideshow-dot--active');
    }
 }
