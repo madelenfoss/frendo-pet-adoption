@@ -10,5 +10,13 @@ export default function mainSlideshow(slides) {
       showFirstSlide()
    }
 
-   
+   function handleButtonPreviousClick(event) {
+      previousSlide();
+      updateSlideshowHTML();
+   }
+
+   function handleButtonNextClick(event) {
+      nextSlide();
+      updateSlideshowHTML();
+   }
 }
