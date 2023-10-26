@@ -19,4 +19,10 @@ export default function mainSlideshow(slides) {
       nextSlide();
       updateSlideshowHTML();
    }
+
+   // To make sure first image is active and displayed when entering page
+   function showFirstSlideWhenEnteringPage() {
+      const slideshowSlides = document.querySelectorAll('.main__slideshow-slide');
+      const buttonDots = document.querySelectorAll('.main__slideshow-dot');
+   }
 }
