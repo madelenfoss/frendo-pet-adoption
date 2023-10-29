@@ -8,6 +8,14 @@ export default function mainSlideshow(slides) {
    const controlButtonsContainer  = document.querySelector('.main__slideshow-controls');
    const buttonDotsContainer = document.querySelector('.main__slideshow-dots');
 
+   // Function to filter 'slideshow' from the fetched data array
+   function filterSlideshow(slides) {
+   return slides.filter(slide => slide._type === 'slideshow');
+      }
+
+   // Filter the 'slideshow' data
+   const slideshowData = filterSlideshow(slides);
+
    if (slideshowContainer) {
       renderSanitySlides(),
       showFirstSlideWhenEnteringPage()
@@ -46,6 +54,23 @@ export default function mainSlideshow(slides) {
       previousButtonImage.setAttribute('aria-label', 'Click button to go to previous slide');
       nextButtonImage.setAttribute('src', './_app/assets/icons/nextbuttonimg.png');
       nextButtonImage.setAttribute('aria-label', 'Click button to go to next slide');
+
+      // Double check if path is working
+      for (const slide of slideshowData) {
+         const slideshowSlides = document.createElement('figure');
+         const slideshowSlideImage = document.createElement('img');
+         const slideshowSlideCaption = document.createElement('figcaption');
+         const buttonDots = document.createElement('div');
+
+         slideshowSlides.classList.add('main__slideshow-slide');
+         slideshowSlideImage.classList.add('main__slideshow-slide-image');
+         slideshowSlideCaption.classList.add('main__slideshow-slide-caption');
+         buttonDots.classList.add('main__slideshow-dot');
+
+         slideshowSlideImage.setAttribute('src', slide.slideshowImages);
+         slideshowSlideImage.setAttribute('alt', slide.slideshowAlternative);
+          console.log(slide.slideshowImages);
+      }
    }
 }
 
