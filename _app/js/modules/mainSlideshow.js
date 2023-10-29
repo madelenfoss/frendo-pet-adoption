@@ -4,6 +4,7 @@ export default function mainSlideshow(slides) {
 // slideshow tutorial, with data fetched from Sanity.
 
 // Fix slideshow issue in Sanity Studio - reorganise content - create new system
+// or loop over slideshow images with for loop?
 
    const slideshowContainer = document.querySelector('.main__slideshow');
    const slideshowSlides = document.querySelector('.main__slideshow-slides');
@@ -69,12 +70,11 @@ export default function mainSlideshow(slides) {
          slideshowSlideCaption.classList.add('main__slideshow-slide-caption');
          buttonDots.classList.add('main__slideshow-dot');
 
+         // For loop starts here?
          slideshowSlideImage.setAttribute('src', slide.slideshowImage);
          slideshowSlideImage.setAttribute('alt', slide.slideshowAlternative);
-
-         console.log(slideshowSlideImage);
-         
          slideshowSlideCaption.innerText = `${slide.slideshowDescription}`;
+
 
          buttonDotsContainer.appendChild(buttonDots);
 
