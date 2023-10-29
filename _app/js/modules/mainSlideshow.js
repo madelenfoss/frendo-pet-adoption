@@ -57,12 +57,12 @@ export default function mainSlideshow(slides) {
 
       // Double check if path is working
       for (const slide of slideshowData) {
-         const slideshowSlides = document.createElement('figure');
+         const slideshowSlide = document.createElement('figure');
          const slideshowSlideImage = document.createElement('img');
          const slideshowSlideCaption = document.createElement('figcaption');
          const buttonDots = document.createElement('div');
 
-         slideshowSlides.classList.add('main__slideshow-slide');
+         slideshowSlide.classList.add('main__slideshow-slide');
          slideshowSlideImage.classList.add('main__slideshow-slide-image');
          slideshowSlideCaption.classList.add('main__slideshow-slide-caption');
          buttonDots.classList.add('main__slideshow-dot');
@@ -70,19 +70,25 @@ export default function mainSlideshow(slides) {
          slideshowSlideImage.setAttribute('src', slide.slideshowImage);
          slideshowSlideImage.setAttribute('alt', slide.slideshowAlternative);
 
+         console.log(slideshowSlideImage);
+         
          slideshowSlideCaption.innerText = `${slide.slideshowDescription}`;
 
          buttonDotsContainer.appendChild(buttonDots);
 
-         slideshowSlides.append(
+         slideshowSlide.append(
             slideshowSlideImage,
             slideshowSlideCaption,
          )
 
-         slideshowContainer.append(
-            slideshowSlides,
+         slideshowSlides.append(
+            slideshowSlide,
             buttonDotsContainer
          ) 
+
+         slideshowContainer.append(
+            slideshowSlides
+         )
       }
 
       previousButton.appendChild(previousButtonImage);
