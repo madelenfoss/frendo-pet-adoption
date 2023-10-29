@@ -24,7 +24,7 @@ export default async function fetchAllData() {
 		"dogSound": woof.asset->url ,
 		"catSound": meow.asset->url,
 		"birdSound": chirp.asset->url,
-		"slideshowImages": slideshowImages[].image.asset->url,
+		"slideshowImage": slideshowImages[].image.asset->url,
 		"slideshowDescription": slideshowImages[].description,
 		"slideshowAlternative": slideshowImages[].altText,
 		"slideshowCredits": slideshowImages[].photographer,
