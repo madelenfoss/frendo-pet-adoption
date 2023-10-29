@@ -3,6 +3,8 @@ export default function mainSlideshow(slides) {
 // Slideshow created with help from Alejandro Rojas' panopto 
 // slideshow tutorial, with data fetched from Sanity.
 
+// Fix slideshow issue in Sanity Studio - reorganise content - create new system
+
    const slideshowContainer = document.querySelector('.main__slideshow');
    const slideshowSlides = document.querySelector('.main__slideshow-slides');
    const controlButtonsContainer  = document.querySelector('.main__slideshow-controls');
