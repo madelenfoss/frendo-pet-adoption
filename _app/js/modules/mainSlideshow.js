@@ -67,10 +67,34 @@ export default function mainSlideshow(slides) {
          slideshowSlideCaption.classList.add('main__slideshow-slide-caption');
          buttonDots.classList.add('main__slideshow-dot');
 
-         slideshowSlideImage.setAttribute('src', slide.slideshowImages);
+         slideshowSlideImage.setAttribute('src', slide.slideshowImage);
          slideshowSlideImage.setAttribute('alt', slide.slideshowAlternative);
-          console.log(slide.slideshowImages);
+
+         slideshowSlideCaption.innerText = `${slide.slideshowDescription}`;
+
+         buttonDotsContainer.appendChild(buttonDots);
+
+         slideshowSlides.append(
+            slideshowSlideImage,
+            slideshowSlideCaption,
+         )
+
+         slideshowContainer.append(
+            slideshowSlides,
+            buttonDotsContainer
+         ) 
       }
+
+      previousButton.appendChild(previousButtonImage);
+      nextButton.appendChild(nextButtonImage);
+
+      controlButtonsContainer.append(
+         previousButton,
+         nextButton
+      );
+
+      previousButton.addEventListener('click', handleButtonPreviousClick);
+      nextButton.addEventListener('click', handleButtonNextClick);
    }
 }
 
