@@ -7,7 +7,7 @@ export default function mainSlideshow(slides) {
 
    if (slideshowContainer) {
       renderSanitySlides(),
-      showFirstSlide()
+      showFirstSlideWhenEnteringPage()
    }
 
    function handleButtonPreviousClick(event) {
@@ -28,4 +28,12 @@ export default function mainSlideshow(slides) {
       slideshowSlides[0].classList.add('main__slideshow-slide--active');
       buttonDots[0].classList.add('main__slideshow-dot--active');
    }
+
+   function renderSanitySlides() {
+      const previousButton = document.createElement('button');
+      const previousButtonImage = document.createElement('img');
+      const nextButton = document.createElement('button');
+      const nextButtonImage = document.createElement('img');
+   }
 }
+
