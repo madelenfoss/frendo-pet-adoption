@@ -34,6 +34,14 @@ export default function mainSlideshow(slides) {
       const previousButtonImage = document.createElement('img');
       const nextButton = document.createElement('button');
       const nextButtonImage = document.createElement('img');
+      previousButton.classList.add('main__slideshow-previous-button');
+      nextButton.classList.add('main__slideshow-next-button');
+
+      // Find new arrow images
+      previousButtonImage.setAttribute('src', './_app/assets/icons/previousbuttonimg.png');
+      previousButtonImage.setAttribute('aria-label', 'Click button to go to previous slide');
+      nextButtonImage.setAttribute('src', './_app/assets/icons/nextbuttonimg.png');
+      nextButtonImage.setAttribute('aria-label', 'Click button to go to next slide');
    }
 }
 
