@@ -1,5 +1,8 @@
 export default function mainSlideshow(slides) {
 
+// Slideshow created with help from Alejandro Rojas' panopto 
+// slideshow tutorial, with data fetched from Sanity.
+
    const slideshowContainer = document.querySelector('.main__slideshow');
    const slideshowSlides = document.querySelector('.main__slideshow-slides');
    const controlButtonsContainer  = document.querySelector('.main__slideshow-controls');
@@ -34,6 +37,7 @@ export default function mainSlideshow(slides) {
       const previousButtonImage = document.createElement('img');
       const nextButton = document.createElement('button');
       const nextButtonImage = document.createElement('img');
+
       previousButton.classList.add('main__slideshow-previous-button');
       nextButton.classList.add('main__slideshow-next-button');
 
