@@ -53,9 +53,9 @@ export default function mainSlideshow(slides) {
       nextButton.classList.add('main__slideshow-next-button');
 
       // Find new arrow images
-      previousButtonImage.setAttribute('src', './_app/assets/icons/previousbuttonimg.png');
+      previousButtonImage.setAttribute('src', './_app/assets/icons/back48.png');
       previousButtonImage.setAttribute('aria-label', 'Click button to go to previous slide');
-      nextButtonImage.setAttribute('src', './_app/assets/icons/nextbuttonimg.png');
+      nextButtonImage.setAttribute('src', './_app/assets/icons/next48.png');
       nextButtonImage.setAttribute('aria-label', 'Click button to go to next slide');
 
       // Double check if path is working
