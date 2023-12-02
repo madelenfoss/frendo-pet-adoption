@@ -112,7 +112,7 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	color: var(--tertiary);
-	background: rgb(255, 208, 0);
+	background: #ffd000;
 	border-radius: 3rem;
 	box-shadow: 0 3px 5px var(--tertiary);
 	cursor: pointer;
