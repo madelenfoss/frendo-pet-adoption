@@ -252,6 +252,14 @@ export default function petDetails(pets) {
 				petDetailsInfoLiveWithChildren,
 				petDetailsInfoIdealHome
 			)
+		} else if (currentPet._type === 'other') {
+			petDetailsInfo.append(
+				petDetailsInfoBreed,
+				petDetailsInfoSex,
+				petDetailsInfoAge,
+				petDetailsInfoSize,
+				petDetailsInfoIdealHome
+			)
 		};
 
 		petDetailsInfoAndDescription.append(
