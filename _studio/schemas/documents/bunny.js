@@ -112,6 +112,7 @@ export default {
 		{
 			title: 'Portrait',
 			name: 'portrait',
+			description: 'Image orientation and aspect ratio should be portrait (3:2 or 4:5) for best result',
 			type: 'image',
 			fields: [
 				{
