@@ -52,10 +52,11 @@ export default function mainSlideshow(slides) {
       previousButton.classList.add('main__slideshow-previous-button');
       nextButton.classList.add('main__slideshow-next-button');
 
-      // Find new arrow images
-      previousButtonImage.setAttribute('src', './_app/assets/icons/back48.png');
+      // Change arrow svg colors
+      previousButtonImage.setAttribute('src', './_app/assets/icons/previous.svg');
       previousButtonImage.setAttribute('aria-label', 'Click button to go to previous slide');
-      nextButtonImage.setAttribute('src', './_app/assets/icons/next48.png');
+      // previousButtonImage.classList.add('slideshow__button-previous');
+      nextButtonImage.setAttribute('src', './_app/assets/icons/next.svg');
       nextButtonImage.setAttribute('aria-label', 'Click button to go to next slide');
 
       // Double check if path is working
