@@ -60,6 +60,7 @@ Pexels.com
 
 Icons from:
 Icons8.com
+Iconfinder
 
 ## Access:
 - http://localhost:5500
