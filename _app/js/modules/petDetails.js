@@ -258,6 +258,7 @@ export default function petDetails(pets) {
 				petDetailsInfoSex,
 				petDetailsInfoAge,
 				petDetailsInfoSize,
+				petDetailsInfoLiveWithChildren,
 				petDetailsInfoIdealHome
 			)
 		};
