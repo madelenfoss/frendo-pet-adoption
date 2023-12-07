@@ -54,3 +54,10 @@ Iconfinder
 ## Access:
 - http://localhost:5500
 - http://localhost:3000
+
+## What I will do next:
+- Remove placeholder images and create new image links for each pet adoption page (dogs, cats, birds, bunnies and other animals).
+- Add more pets to Sanity studio.
+- Create slideshow.
+- Create memory game.
+
