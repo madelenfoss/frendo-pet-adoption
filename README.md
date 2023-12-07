@@ -1,11 +1,6 @@
 # Frendo Pet Adoption
 
-This repository is the main project for the Frontend Development class of autumn/winter 22. A website to show what we've learnt so far, with html, css and javascript. 
-
-** Update: **
-Now being re-created with Sanity and what we have learnt during the second
-and last semester of studying Frontend Development at Fagskolen Kristiania,
-spring/summer 23.
+Pet adoption website in the making - created with HTML, CSS, Javascript and Sanity.io.
 
 ## Content:
 
@@ -27,15 +22,12 @@ spring/summer 23.
 
 Mobile and desktop version.
 Adoption pages for dogs, cats, birds and bunnies with data fetched from Sanity, with the possibility to click on each animal to open a new page with more information about the pet.
-Main page slideshow displaying images of the animals and the surrounding environment.
+Main page slideshow displaying images of the animals and the pet adoption shelter.
 
 ## Important links:
 
 **Github repository:**
-
-**Github project:**
-
-**Sanity studio deploy:**
+https://github.com/madelenfoss/frendo-pet-adoption
 
 **Netlify:**
 https://frendopetadoption.netlify.app
@@ -50,9 +42,6 @@ https://frendopetadoption.netlify.app
 - Netlify
 
 ## Sources:
-
-Scroll to top button:
-https://www.freecodecamp.org/news/back-to-top-button-and-page-progressbar-with-html-css-and-js/
 
 All pet photos from:
 Unsplash.com
