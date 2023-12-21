@@ -66,7 +66,7 @@
 	position: absolute;
 	top: 50%;
 	right: 0;
-   margin: 1rem 2rem;
+   margin: 0 2rem;
    width: 4rem;
 	transform: translateY(-50%);
 	background: transparent;
@@ -82,7 +82,7 @@
 	position: absolute;
 	top: 50%;
 	left: 0;
-   margin: 1rem 2rem;
+   margin: 0 2rem;
    width: 4rem;
 	transform: translateY(-50%);
 	background: transparent;
