@@ -107,6 +107,7 @@
 
 	.main__slideshow-slide-image {
 		width: 100%;
+		border: none;
 	}
 
 	.main__slideshow-controls {
