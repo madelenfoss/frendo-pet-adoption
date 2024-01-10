@@ -29,7 +29,7 @@ Main page slideshow displaying images of the animals and the pet adoption shelte
 **Github repository:**
 https://github.com/madelenfoss/frendo-pet-adoption
 
-**Netlify:**
+**Website demo:**
 https://frendopetadoption.netlify.app
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a225b635-920d-4dfe-be13-0a327b0642c8/deploy-status)](https://app.netlify.com/sites/frendopetadoption/deploys)
@@ -60,4 +60,5 @@ Iconfinder
 - Add more pets to Sanity studio.
 - Create slideshow.
 - Create memory game.
+- Add items and cart functions to shop
 
