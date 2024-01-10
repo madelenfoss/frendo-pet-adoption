@@ -22,6 +22,7 @@
 	background: var(--primary);
 	color: var(--tertiary);
    border-radius: 1rem;
+	box-shadow: 0 4px 10px var(--tertiary);
 }
 
 .main__slideshow-slide {
