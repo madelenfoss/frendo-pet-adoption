@@ -53,9 +53,9 @@ export default function mainSlideshow(slides) {
       nextButton.classList.add('main__slideshow-next-button');
 
       // Change arrow svg colors
-      previousButtonImage.setAttribute('src', './_app/assets/icons/blue-previous-button.svg');
+      previousButtonImage.setAttribute('src', './_app/assets/icons/arrow_left.svg');
       previousButtonImage.setAttribute('aria-label', 'Click button to go to previous slide');
-      nextButtonImage.setAttribute('src', './_app/assets/icons/blue-next-button.svg');
+      nextButtonImage.setAttribute('src', './_app/assets/icons/arrow_right.svg');
       nextButtonImage.setAttribute('aria-label', 'Click button to go to next slide');
 
       // Double check if path is working
