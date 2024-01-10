@@ -104,6 +104,7 @@
 		display: block;
 		margin: 3rem auto 5rem auto;
 		background: none;
+		box-shadow: none;
 		height: 100%;
 	}
 	
