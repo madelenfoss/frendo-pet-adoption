@@ -44,7 +44,8 @@
 	width: 70%;
 	height: 60%;
 	object-fit: cover;
-	border: 1rem solid var(--quinary-color); 
+	border-radius: 0.5rem;
+	border: 1rem solid var(--quinary);
 }
 
 .main__slideshow-slide-caption {
