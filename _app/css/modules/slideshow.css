@@ -1,6 +1,7 @@
 .main__link {
    display: flex;
    margin: 0 auto;
+	padding: 0 1rem;
    justify-content: center;
    width: auto;
    text-decoration: none;
@@ -92,4 +93,23 @@
 
 .main__slideshow-previous-button img {
 	max-width: 6vw;
+}
+
+@media screen and (max-width: 768px) {
+	.main__slideshow {
+		background: none;
+	}
+	
+	.main__slideshow-slide {
+		display: flex;
+		height: auto;
+	}
+
+	.main__slideshow-slide-image {
+		width: 100%;
+	}
+
+	.main__slideshow-controls {
+		display: none;
+	}
 }
