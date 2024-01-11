@@ -2,14 +2,10 @@
    margin: 0 auto;
 }
 
-.donate__button {
-   display: flex;
+.donate__number {
    margin: 3rem auto;
    padding: 2rem 4rem;
-   background: var(--quaternary);
-   border-radius: 10rem;
-   color: var(--quinary);
    font-family: var(--logo-font);
-   font-size: x-large;
-   border: none;
+   font-size: large;
+   color: var(--tertiary);
 }
