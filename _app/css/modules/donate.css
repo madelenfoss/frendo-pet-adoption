@@ -7,10 +7,19 @@
 
 .donate__number {
    margin: 2rem auto;
-   padding: 2rem 4rem;
-   font-family: var(--logo-font);
    font-size: x-large;
    color: var(--tertiary);
+}
+
+.donate__shop {
+   margin: 2rem auto;
+   text-decoration: none;
+   color: var(--tertiary);
+   font-size: x-large;
+}
+
+.donate__shop:hover {
+   color: var(--quaternary);
 }
 
 .donate__image {
