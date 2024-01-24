@@ -1,6 +1,9 @@
 export default function petAgeConverter() {
 	
-	/*
+	/* 
+	please take these numbers 
+	with a pinch of salt
+	
 	1 human year =
 	8 cat years
 	7 dog years
