@@ -43,13 +43,13 @@ https://frendopetadoption.netlify.app
 
 ## Sources:
 
-All pet photos from:
-Unsplash.com
-Pexels.com
+**All pet photos from:**
+- Unsplash.com
+- Pexels.com
 
-Icons from:
-Icons8.com
-Iconfinder
+**Icons from:**
+- Icons8.com
+- Iconfinder
 
 ## Access:
 - http://localhost:5500
