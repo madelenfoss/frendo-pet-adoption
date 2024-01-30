@@ -23,8 +23,11 @@
 }
 
 .donate__image {
-   margin: 2rem auto 5rem auto;
-   width: 30%;
-   height: 30rem;
-   border: 5px solid white;
+	display: block;
+	margin: 2rem auto 5rem auto;
+	width: 30%;
+	min-width: 400px;
+	align-items: center;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px var(--tertiary);
 }
