@@ -31,3 +31,21 @@
 	border-radius: 20px;
 	box-shadow: 0 5px 10px var(--tertiary);
 }
+
+@media screen and (max-width: 768px) {
+	.donate__image {
+		width: 95%;
+		min-width: 10rem;
+		border-radius: 5px;
+	}
+
+	.donate__container {
+		width: 100%;
+	}
+
+   .donate__number,
+   .donate__shop {
+      width: 100%;
+		padding: 0 1.5rem;
+   }
+ }
